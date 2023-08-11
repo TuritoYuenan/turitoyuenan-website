@@ -1,0 +1,22 @@
+@use 'variables';
+
+:root {
+	--bright-pink-crayola: #ef476f;
+	--sunglow: #ffd166;
+	--emerald: #06d6a0;
+	--blue-ncs: #118ab2;
+	--midnight-green: #073b4c;
+
+	background: $midnight-green;
+	color: white;
+
+	font: normal large Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+	margin: 0.5rem 0;
+}
+
+body {
+	margin: 0;
+}
