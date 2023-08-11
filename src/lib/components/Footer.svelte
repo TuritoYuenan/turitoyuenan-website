@@ -8,5 +8,6 @@
 	footer {
 		padding: 1rem;
 		background: $crust;
+		text-align: center;
 	}
 </style>

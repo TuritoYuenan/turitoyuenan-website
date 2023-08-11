@@ -14,13 +14,18 @@
 		justify-content: center;
 		align-items: center;
 
-		background: linear-gradient(0deg, $tint, $tint),
-			url(/sample-wallpaper.jpg) fixed center no-repeat;
-		background-size: cover;
+		background: {
+			image: linear-gradient(0deg, $tint, $tint), url(/sample-wallpaper.jpg);
+			attachment: fixed;
+			position: center;
+			repeat: no-repeat;
+			size: cover;
+		}
 
 		h1 {
 			font-size: 8vw;
 			font-variant: small-caps;
+			filter: drop-shadow(0 0 10px $yellow);
 		}
 	}
 </style>
