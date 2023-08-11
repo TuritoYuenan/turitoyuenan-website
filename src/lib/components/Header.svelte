@@ -17,14 +17,5 @@
 			display: flex;
 			gap: 1rem;
 		}
-
-		a {
-			text-decoration: none;
-			color: inherit;
-		}
-
-		a:hover {
-			text-decoration: underline;
-		}
 	}
 </style>

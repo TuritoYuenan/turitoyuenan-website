@@ -4,7 +4,7 @@
 	"bracketSameLine": true,
 	"trailingComma": "none",
 	"endOfLine": "lf",
-	"printWidth": 70,
+	"printWidth": 100,
 	"plugins": ["prettier-plugin-svelte"],
 	"pluginSearchDirs": ["."],
 	"overrides": [

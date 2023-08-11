@@ -1,22 +1,35 @@
-@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-	--bright-pink-crayola: #ef476f;
-	--sunglow: #ffd166;
-	--emerald: #06d6a0;
-	--blue-ncs: #118ab2;
-	--midnight-green: #073b4c;
-
-	background: $midnight-green;
-	color: white;
-
-	font: normal large Tahoma, sans-serif;
+	font: normal large 'Work Sans', Arial, sans-serif;
+	background: $base;
+	color: $text;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
-	margin: 0.5rem 0;
+	margin: 0.5em 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 body {
 	margin: 0;
+}
+
+article {
+	width: 1000px;
+	margin: auto;
+}
+
+@media (max-width: 1000px) {
+	article {
+		width: auto;
+	}
 }
