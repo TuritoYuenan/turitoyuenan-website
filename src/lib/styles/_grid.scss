@@ -1,4 +1,4 @@
 @mixin r-grid($min, $max: 1fr) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($min, $max));
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax($min, $max));
 }
