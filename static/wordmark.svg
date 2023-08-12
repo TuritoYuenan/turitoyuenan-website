@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.1" viewBox="0 0 380 125" xmlns="http://www.w3.org/2000/svg">
-	<g transform="matrix(1.5,0,0,1.5,-20,-12.5)" fill="#df8e1d" stroke-width=".667">
+	<g transform="matrix(1.5,0,0,1.5,-20,-12.5)" fill="#df8e1d">
 		<polygon points="20 55 46 55 56 15 30 15"/>
 		<polygon points="80 35 38.5 85 51 35"/>
 		<polygon points="63.4 55 80 35 25 35 20 55"/>
 	</g>
-	<text x="-29.94" y="-16.64" fill="#dce0e8" font-family="'Work Sans'" font-size="64px" font-variant="small-caps" font-weight="900" style="line-height:2"><tspan x="109.4" y="53.36" style="line-height:2">Turito</tspan><tspan x="109.4" y="113.4" style="line-height:2">Yuenan</tspan></text>
+	<text fill="#dce0e8" font-family="'Work Sans'" font-size="64px" font-variant="small-caps" font-weight="900" style="line-height:2"><tspan x="110" y="53" style="line-height:2">Turito</tspan><tspan x="110" y="113" style="line-height:2">Yuenan</tspan></text>
 </svg>
