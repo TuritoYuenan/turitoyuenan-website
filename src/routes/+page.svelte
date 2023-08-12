@@ -7,8 +7,8 @@
 	<div>
 		<h1>Introduction</h1>
 		<p>
-			I am Turito Yuenan, a curious university student from Vietnam.
-			I have an interest in Computer Science, Fiction Worldbuilding and the Solarpunk movement
+			I am a curious university student from Vietnam with an interest in Computer
+			Science, Fiction Worldbuilding and the Solarpunk movement
 		</p>
 	</div>
 	<div class="grid">
@@ -20,8 +20,8 @@
 </article>
 
 <style lang="scss">
-	@use '$lib/macchiato' as *;
-	@use '$lib/variables' as *;
+	@use '$lib/styles/macchiato' as *;
+	@use '$lib/styles/grid' as *;
 
 	article {
 		text-align: center;

@@ -3,7 +3,7 @@
 </section>
 
 <style lang="scss">
-	@use '$lib/macchiato' as *;
+	@use '$lib/styles/macchiato' as *;
 	$tint: transparentize($base, 0.5);
 
 	section#parallax {

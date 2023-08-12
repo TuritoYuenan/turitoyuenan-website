@@ -9,8 +9,7 @@
 
 <header>
 	<a href="/">
-		<img src="/wordmark.svg" alt="Wordmark" />
-		<span>Turito Yuenan</span>
+		<img src="/wordmark.svg" alt="Turito Yuenan" />
 	</a>
 	<nav>
 		{#each menu as { href, text }}<a {href}>{text}</a>{/each}
@@ -18,45 +17,38 @@
 </header>
 
 <style lang="scss">
-	@use '$lib/macchiato' as *;
+	@use '$lib/styles/macchiato' as *;
 
 	header {
 		padding: 1rem;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
+		overflow: hidden;
 
 		img {
-			height: 100%;
+			height: 3em;
 			border-radius: 0.5em;
+			&:hover { filter: drop-shadow(0 0 10px $peach); }
 		}
 
-		img:hover {
-			filter: drop-shadow(0 0 10px $peach);
-		}
-
-		span {
-			opacity: 0;
-			overflow: hidden;
+		a {
+			align-items: center;
+			float: left;
 		}
 	}
 
 	nav {
-		display: flex;
-		align-items: center;
-
+		float: right;
 		a {
-			padding: 1rem;
-
-			&:nth-child(1):hover {background: $red;}
-			&:nth-child(2):hover {background: $peach;}
-			&:nth-child(3):hover {background: $green;}
-			&:nth-child(4):hover {background: $blue;}
+			padding: 1rem .5rem;
+			&:nth-child(1) {color: $red;}
+			&:nth-child(2) {color: $peach;}
+			&:nth-child(3) {color: $green;}
+			&:nth-child(4) {color: $blue;}
+			&:hover {background: $mantle;}
 		}
+	}
 
-		a:hover {
-			background: $green;
-			color: $base;
-		}
+	@media (max-width: 600px) {
+		header a {float: none; display: block;}
+		nav {float: none;}
 	}
 </style>

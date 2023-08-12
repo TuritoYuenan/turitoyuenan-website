@@ -5,10 +5,7 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	css: {
 		preprocessorOptions: {
-			scss: {additionalData: `
-				@use '$lib/variables' as *;
-				@use '$lib/macchiato' as *;
-			`}
+			scss: { additionalData: `@use '$lib/styles/macchiato' as *;` }
 		}
 	}
 });

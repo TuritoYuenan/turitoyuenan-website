@@ -1,7 +1,7 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
-	import '$lib/global.scss';
+	import '$lib/styles/global.scss';
 </script>
 
 <svelte:head>
@@ -13,9 +13,3 @@
 	<slot />
 </main>
 <Footer />
-
-<style>
-	main {
-		min-height: 100vh;
-	}
-</style>
