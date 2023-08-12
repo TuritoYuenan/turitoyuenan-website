@@ -1,1 +1,6 @@
-// place files you want to import through the `$lib` alias in this folder.
+export const menu = [
+	{ href: '/articles', text: 'Articles' },
+	{ href: '/projects', text: 'Projects' },
+	{ href: '/contacts', text: 'Contacts' },
+	{ href: '/crrvitae', text: 'Curriculum Vitae' }
+];

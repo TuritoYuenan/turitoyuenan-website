@@ -1,8 +1,9 @@
 <script>
-	import Parallax from "$lib/components/Parallax.svelte";
+	import Parallax from '$lib/components/Parallax.svelte';
+	import { menu } from '$lib/index.js';
 </script>
 
-<Parallax/>
+<Parallax />
 <article>
 	<div>
 		<h1>Introduction</h1>
@@ -12,10 +13,7 @@
 		</p>
 	</div>
 	<div class="grid">
-		<a href="/articles">Articles</a>
-		<a href="/projects">Projects</a>
-		<a href="/contacts">Contacts</a>
-		<a href="/crrvitae">CV</a>
+		{#each menu as { href, text }}<a {href}>{text}</a>{/each}
 	</div>
 </article>
 
@@ -42,7 +40,7 @@
 		a {
 			padding: 1rem;
 			color: $base;
-			
+
 			&:hover {background: $text;}
 
 			&:nth-child(1) {background: $red;}

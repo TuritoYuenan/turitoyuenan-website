@@ -1,10 +1,5 @@
 <script>
-	const menu = [
-		{ href: '/articles', text: 'Articles' },
-		{ href: '/projects', text: 'Projects' },
-		{ href: '/contacts', text: 'Contacts' },
-		{ href: '/crrvitae', text: 'CV' }
-	];
+	import { menu } from '$lib/index.js';
 </script>
 
 <header>
