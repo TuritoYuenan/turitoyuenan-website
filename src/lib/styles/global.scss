@@ -3,10 +3,8 @@
 :root {
 	background: $base;
 	color: $text;
-	font: {
-		size: large;
-		family: 'Work Sans', Arial, sans-serif;
-	};
+	font-size: large;
+	font-family: 'Work Sans', Arial, sans-serif;
 }
 
 * {
@@ -15,6 +13,11 @@
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
 	margin: 0.5rem 0;
+}
+
+h1 {
+	font-variant: small-caps;
+	font-size: 3em;
 }
 
 a {
@@ -30,7 +33,7 @@ body {
 }
 
 main {
-	min-height: 100vh;
+	min-height: 80vh;
 }
 
 article {
