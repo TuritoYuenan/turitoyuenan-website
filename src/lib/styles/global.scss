@@ -39,15 +39,19 @@ main {
 article {
 	width: 1000px;
 	margin: auto;
+
+	@media (max-width: 1000px) {
+		width: auto;
+	}
+}
+
+// Images with a locked aspect ratio
+img.locked {
+	width: 100%;
+	height: auto;
 }
 
 ::selection {
 	background: $yellow;
 	color: $base;
-}
-
-@media (max-width: 1000px) {
-	article {
-		width: auto;
-	}
 }

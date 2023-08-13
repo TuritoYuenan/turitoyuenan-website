@@ -2,27 +2,22 @@
 
 This repo contains source code and data of my own personal website made with SvelteKit (+extensions), SASS and Catppuccin color palette.
 
-## Developing
-
-Install dependencies with `npm i`. Then run using `npm run dev -- --open`
-
-## Building
+## Usage
 
 ```shell
+# Install dependencies
+npm i
+
+# Run dev mode
+npm run dev -- --open
+
+# Build
 npm run build
-```
 
-## Other stuffs
-
-### Previewing
-
-```shell
+# Preview
 npm run preview
-```
 
-### Using Prettier
-
-```shell
-npm run lint # Check code format
-npm run format # Format all codes
+# Using Prettier
+npm run lint # Check
+npm run format # Format
 ```

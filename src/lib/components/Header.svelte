@@ -26,7 +26,9 @@
 		img {
 			height: 3em;
 			border-radius: 0.5em;
-			&:hover { filter: drop-shadow(0 0 10px $peach); }
+			&:hover {
+				filter: drop-shadow(0 0 5px $peach);
+			}
 		}
 	}
 
@@ -35,23 +37,29 @@
 		flex-wrap: wrap;
 		width: fit-content;
 		a {
-			padding: 1rem .5rem;
+			padding: 1rem 0.5rem;
 			&:nth-child(1) {color: $red;}
 			&:nth-child(2) {color: $peach;}
 			&:nth-child(3) {color: $green;}
 			&:nth-child(4) {color: $blue;}
-			&:hover {background: $base;}
+			&:hover {
+				background: $base;
+			}
 		}
 	}
 
 	@media (max-width: 700px) {
 		header {
 			flex-direction: column;
-			gap: 1rem;
+			gap: 0.5rem;
 		}
 
 		nav {
-			justify-content: space-around;
+			width: 100%;
+			justify-content: space-between;
+			a {
+				padding: 0.5rem;
+			}
 		}
 	}
 </style>

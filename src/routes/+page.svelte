@@ -1,72 +1,60 @@
 <script>
-	import Parallax from '$lib/components/Parallax.svelte';
-	import TwoColumns from '$lib/components/TwoColumns.svelte';
-
+	import { variants } from '@catppuccin/palette';
 	import { menu } from '$lib/index.js';
-	const titles = Array.from(menu, (x) => x.text);
-	const links = Array.from(menu, (x) => x.href);
+	import Entry from '$lib/components/Entry.svelte';
+
+	const colors = [
+		variants.macchiato.red,
+		variants.macchiato.peach,
+		variants.macchiato.green,
+		variants.macchiato.blue
+	];
 </script>
 
-<Parallax />
+<section id="parallax">
+	<h1>Turito Yuenan</h1>
+	<h2>Curious CS Student</h2>
+</section>
 <article>
-	<section style="text-align: center;">
-		<h1>Introduction</h1>
+	{#each menu as { text, href, desc }, i}
+		{@const flip = (i + 1) % 2 === 0}
+		<Entry {href} {flip} title={text} color={colors[i].hex}>{desc}</Entry>
+	{/each}
+	<section style="padding: 1rem; text-align: center;">
+		<p>Hello. I am a curious university student from Vietnam.</p>
 		<p>
-			I am a curious university student from Vietnam with an interest in Computer Science, Fiction
-			Worldbuilding and the Solarpunk movement
+			I study Computer Science, but also have an interest in Natural Science, Linguistics and Art.
 		</p>
 	</section>
-	<TwoColumns --heading-color=#ed8796
-		title={titles[0]}
-		href={links[0]}
-		image_src='/icons/articles.svg'>
-		<p>I sometimes write blogs, articles about various topics</p>
-	</TwoColumns>
-	<TwoColumns --heading-color=#f5a97f
-		reversed=true
-		title={titles[1]}
-		href={links[1]}
-		image_src='/icons/projects.svg'>
-		<p>Showcases of my projects</p>
-	</TwoColumns>
-	<TwoColumns --heading-color=#a6da95
-		title={titles[2]}
-		href={links[2]}
-		image_src='/icons/contacts.svg'>
-		<p>Let's keep in touch. I am available on many social media</p>
-	</TwoColumns>
-	<TwoColumns --heading-color=#8aadf4
-		reversed=true
-		title={titles[3]}
-		href={links[3]}
-		image_src='/icons/cv.svg'>
-		<p>My Curriculum Vitae for job purposes</p>
-	</TwoColumns>
 </article>
 
-<!--
 <style lang="scss">
 	@use '$lib/styles/macchiato' as *;
-	@use '$lib/styles/grid' as *;
+	$tint: transparentize($base, 0.5);
+	$wallpaper: url(/wallpaper.jpg);
 
-	div.grid {
-		@include r-grid(200px, 1fr);
+	section#parallax {
+		min-height: 60vh;
+		padding: 1rem;
+		color: $yellow;
+		text-align: center;
 
-		margin: 1em;
-		font-weight: bold;
-		font-size: x-large;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 
-		a {
-			padding: 1rem;
-			color: $base;
+		background: {
+			image: linear-gradient(0deg, $tint, $tint), $wallpaper;
+			attachment: fixed;
+			position: center;
+			repeat: no-repeat;
+			size: cover;
+		}
 
-			&:hover {background: $text;}
-
-			&:nth-child(1) {background: $red;}
-			&:nth-child(2) {background: $peach;}
-			&:nth-child(3) {background: $green;}
-			&:nth-child(4) {background: $blue;}
+		h1 {
+			font-size: 10vh;
+			font-variant: small-caps;
 		}
 	}
 </style>
--->
