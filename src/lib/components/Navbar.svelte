@@ -2,19 +2,19 @@
 	import { menu } from '$lib/index.js';
 </script>
 
-<header>
+<nav>
 	<a href="/" id="wordmark">
 		<img src="/wordmark.svg" alt="Turito Yuenan" />
 	</a>
-	<nav>
+	<div>
 		{#each menu as { href, text }}<a {href}>{text}</a>{/each}
-	</nav>
-</header>
+	</div>
+</nav>
 
 <style lang="scss">
 	@use '$lib/styles/macchiato' as *;
 
-	header {
+	nav {
 		padding: 1rem;
 		background: $mantle;
 		display: flex;
@@ -32,7 +32,7 @@
 		}
 	}
 
-	nav {
+	div {
 		display: flex;
 		flex-wrap: wrap;
 		width: fit-content;
@@ -49,12 +49,12 @@
 	}
 
 	@media (max-width: 700px) {
-		header {
+		nav {
 			flex-direction: column;
 			gap: 0.5rem;
 		}
 
-		nav {
+		div {
 			width: 100%;
 			justify-content: space-between;
 			a {

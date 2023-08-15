@@ -11,7 +11,7 @@
 
 	footer {
 		padding: 1rem;
-		background: $crust;
+		background: $mantle;
 		text-align: center;
 
 		a {

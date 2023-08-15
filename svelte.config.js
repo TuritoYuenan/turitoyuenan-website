@@ -6,7 +6,13 @@ import { mdsvex } from 'mdsvex';
 const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex({ extension: '.md' })],
-	kit: { adapter: adapter() }
+	kit: {
+		adapter: adapter(),
+		alias: {
+			'$components': 'src/lib/components/',
+			'$styles': 'src/lib/styles'
+		}
+	}
 };
 
 export default config;

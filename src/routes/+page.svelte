@@ -1,7 +1,7 @@
 <script>
 	import { variants } from '@catppuccin/palette';
 	import { menu } from '$lib/index.js';
-	import Entry from '$lib/components/Entry.svelte';
+	import Entry from '$components/Entry.svelte';
 
 	const colors = [
 		variants.macchiato.red,
@@ -23,7 +23,8 @@
 	<section style="padding: 1rem; text-align: center;">
 		<p>Hello. I am a curious university student from Vietnam.</p>
 		<p>
-			I study Computer Science, but also have an interest in Natural Science, Linguistics and Art.
+			I study Computer Science, but also have an interest in Natural
+			Science, Linguistics and Art.
 		</p>
 	</section>
 </article>

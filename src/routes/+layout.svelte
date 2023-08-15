@@ -1,14 +1,14 @@
 <script>
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import '$lib/styles/global.scss';
+	import Navbar from '$components/Navbar.svelte';
+	import Footer from '$components/Footer.svelte';
+	import '$styles/global.scss';
 </script>
 
 <svelte:head>
 	<title>Turito Yuenan</title>
 </svelte:head>
 
-<Header />
+<Navbar />
 <main>
 	<slot />
 </main>
