@@ -4,6 +4,8 @@
 	import { entries } from '../lib/menu.js';
 </script>
 
+<Metadata title='Homepage'/>
+
 <section id="parallax">
 	<h1>Turito Yuenan</h1>
 	<h2>Curious CS Student</h2>

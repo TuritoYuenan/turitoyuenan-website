@@ -8,9 +8,10 @@
 	export let flip;
 </script>
 
+<!-- @component Used to procedually introduce the website's menu entries -->
 <Dual {flip}>
 	<div slot="one">
-		<h1 style="color: {color};"><a {href}>{title}</a></h1>
+		<h1><a {href} style:color>{title}</a></h1>
 		<p><slot /></p>
 	</div>
 	<div slot="two">

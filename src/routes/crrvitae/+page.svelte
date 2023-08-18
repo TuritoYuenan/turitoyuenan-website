@@ -1,20 +1,14 @@
 <script>
-	const title = `Triet's Curriculum Vitae`;
-	const src = `https://drive.google.com/file/d/1ZdrqAAYJ8mUP1uIBY4aJyyjxVVpSXprH/preview`;
+	import { variants } from '@catppuccin/palette';
+	import Header from '../../lib/components/Header.svelte';
+	import Metadata from '../../lib/components/Metadata.svelte';
 </script>
 
-<article>
-	<h1>My CV</h1>
-	<section><iframe {src} {title} /></section>
-</article>
+<Metadata {title} />
 
-<style lang="scss">
-	@use '$styles/macchiato' as *;
+<Header {title} color={variants.macchiato.blue.hex} />
 
-	h1 {
-		text-align: center;
-	}
-
+<style>
 	section {
 		height: 70vh;
 		margin: 1rem 0;
