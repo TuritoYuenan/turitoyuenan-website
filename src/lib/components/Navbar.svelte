@@ -1,22 +1,27 @@
 <script>
-	import { menu } from '$lib/index.js';
+	import { page } from '$app/stores';
+	export let menu = ['Entry', 'Entry', 'Entry', 'Entry'];
+
+	$: path = $page.url.pathname;
+	const mac = (color) => `var(--ctp-macchiato-${color})`;
 </script>
 
+<!-- @component The top navigation bar -->
 <nav>
 	<a href="/" id="wordmark">
 		<img src="/wordmark.svg" alt="Turito Yuenan" />
 	</a>
 	<div>
-		{#each menu as { href, text }}<a {href}>{text}</a>{/each}
+		{#each menu as { accent, name, href }}
+			<a {href} style:color={mac(accent)} class:active={path === href}>{name}</a>
+		{/each}
 	</div>
 </nav>
 
 <style lang="scss">
-	@use '$lib/styles/macchiato' as *;
-
 	nav {
 		padding: 1rem;
-		background: $mantle;
+		background: var(--ctp-macchiato-mantle);
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -27,7 +32,7 @@
 			height: 3em;
 			border-radius: 0.5em;
 			&:hover {
-				filter: drop-shadow(0 0 5px $peach);
+				filter: drop-shadow(0 0 5px var(--ctp-macchiato-peach));
 			}
 		}
 	}
@@ -37,13 +42,13 @@
 		flex-wrap: wrap;
 		width: fit-content;
 		a {
-			padding: 1rem 0.5rem;
-			&:nth-child(1) {color: $red;}
-			&:nth-child(2) {color: $peach;}
-			&:nth-child(3) {color: $green;}
-			&:nth-child(4) {color: $blue;}
+			padding: 0.5rem;
+
 			&:hover {
-				background: $base;
+				background: var(--ctp-macchiato-base);
+			}
+			&.active {
+				border-bottom: 3pt solid currentColor;
 			}
 		}
 	}
@@ -57,9 +62,6 @@
 		div {
 			width: 100%;
 			justify-content: space-between;
-			a {
-				padding: 0.5rem;
-			}
 		}
 	}
 </style>

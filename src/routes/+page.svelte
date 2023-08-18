@@ -13,7 +13,7 @@
 <article>
 	{#each entries as { accent, name, href, desc }, i}
 		{@const flip = (i + 1) % 2 === 0}
-		<Entry {href} {flip} title={text} color={colors[i].hex}>{desc}</Entry>
+		<Entry {href} {flip} title={name} color='var(--ctp-macchiato-{accent})'>{desc}</Entry>
 	{/each}
 	<section style="padding: 1rem; text-align: center;">
 		<p>Hello. I am a curious university student from Vietnam.</p>
@@ -25,14 +25,13 @@
 </article>
 
 <style lang="scss">
-	@use '$lib/styles/macchiato' as *;
-	$tint: transparentize($base, 0.5);
+	$tint: transparentize(#24273a, 0.5);
 	$wallpaper: url(/wallpaper.jpg);
 
 	section#parallax {
 		min-height: 60vh;
 		padding: 1rem;
-		color: $yellow;
+		color: var(--ctp-macchiato-yellow);
 		text-align: center;
 
 		display: flex;

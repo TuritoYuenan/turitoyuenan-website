@@ -14,7 +14,7 @@
 		margin: 1rem 0;
 		padding: 1rem;
 		border-radius: 1rem;
-		background: $mantle;
+		background: var(--ctp-macchiato-mantle);
 	}
 
 	iframe {

@@ -1,21 +1,25 @@
+<script>
+	import { page } from '$app/stores';
+	import { artStation } from '../../lib/websites';
+
+	$: isHomepage = $page.url.pathname === '/';
+</script>
+
 <footer>
-	<p>&COPY; 2023 Minh Triet | Catppuccin color palette</p>
-	<p>
-		<a href="https://artstation.com/artwork/9NJ28q">Solarpunk Artwork</a> by
-		<a href="https://artstation.com/jessicawoulfe">Jessica Woulfe</a>
-	</p>
+	<p>&COPY; 2023 Minh Triet</p>
+	<p><a href="https://catppuccin.com">Catppuccin</a> color palette</p>
+	{#if isHomepage}
+		<p>
+			<a href={artStation('artwork/9NJ28q')}>"Rooftop Farms"</a>
+			by <a href={artStation('jessicawoulfe')}>Jessica Woulfe</a>
+		</p>
+	{/if}
 </footer>
 
 <style lang="scss">
-	@use '$lib/styles/macchiato' as *;
-
 	footer {
 		padding: 1rem;
-		background: $mantle;
+		background: var(--ctp-macchiato-mantle);
 		text-align: center;
-
-		a {
-			color: $yellow;
-		}
 	}
 </style>
