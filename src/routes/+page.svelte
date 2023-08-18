@@ -1,14 +1,7 @@
 <script>
-	import { variants } from '@catppuccin/palette';
-	import { menu } from '$lib/index.js';
-	import Entry from '$components/Entry.svelte';
-
-	const colors = [
-		variants.macchiato.red,
-		variants.macchiato.peach,
-		variants.macchiato.green,
-		variants.macchiato.blue
-	];
+	import Metadata from '../lib/components/Metadata.svelte';
+	import Entry from '../lib/components/Entry.svelte';
+	import { entries } from '../lib/menu.js';
 </script>
 
 <section id="parallax">
@@ -16,7 +9,7 @@
 	<h2>Curious CS Student</h2>
 </section>
 <article>
-	{#each menu as { text, href, desc }, i}
+	{#each entries as { accent, name, href, desc }, i}
 		{@const flip = (i + 1) % 2 === 0}
 		<Entry {href} {flip} title={text} color={colors[i].hex}>{desc}</Entry>
 	{/each}

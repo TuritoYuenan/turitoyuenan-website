@@ -1,14 +1,11 @@
 <script>
-	import Navbar from '$components/Navbar.svelte';
-	import Footer from '$components/Footer.svelte';
+	import Navbar from '../lib/components/Navbar.svelte';
+	import Footer from '../lib/components/Footer.svelte';
+	import { entries } from '../lib/menu';
 	import '$styles/global.scss';
 </script>
 
-<svelte:head>
-	<title>Turito Yuenan</title>
-</svelte:head>
-
-<Navbar />
+<Navbar menu={entries} />
 <main>
 	<slot />
 </main>
