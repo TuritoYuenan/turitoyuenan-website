@@ -2,6 +2,6 @@
 
 /**
  * Returns an Artstation link
- * @param path
+ * @param {string} path
  */
 export const artStation = (path) => `https://artstation.com/${path}`;
