@@ -4,24 +4,27 @@
 	import { entries } from '../lib/menu.js';
 </script>
 
-<Metadata title='Homepage'/>
+<Metadata title="Homepage" />
 
 <section id="parallax">
 	<h1>Turito Yuenan</h1>
-	<h2>Curious CS Student</h2>
+	<p>Curious CS Student</p>
 </section>
 <article>
+	<section id="introduction">
+		<h2>👋 Salutations</h2>
+		<p>
+			I am a university student from Vietnam, currently studying
+			Computer Science.
+		</p>
+		<p>I also have an interest in Natural science, Linguistics and Art.</p>
+	</section>
 	{#each entries as { accent, name, href, desc }, i}
 		{@const flip = (i + 1) % 2 === 0}
-		<Entry {href} {flip} title={name} color='var(--ctp-macchiato-{accent})'>{desc}</Entry>
+		<Entry {href} {flip} title={name} color="var(--ctp-macchiato-{accent})">
+			{desc}
+		</Entry>
 	{/each}
-	<section style="padding: 1rem; text-align: center;">
-		<p>Hello. I am a curious university student from Vietnam.</p>
-		<p>
-			I study Computer Science, but also have an interest in Natural
-			Science, Linguistics and Art.
-		</p>
-	</section>
 </article>
 
 <style lang="scss">
@@ -56,8 +59,13 @@
 		}
 
 		h1 {
-			font-size: 10vh;
+			font-size: clamp(4rem, 10vw, 7rem);
 			font-variant: small-caps;
+		}
+
+		p {
+			font-weight: bold;
+			font-size: clamp(2rem, 3vw, 4rem);
 		}
 	}
 </style>
