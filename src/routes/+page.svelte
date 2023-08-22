@@ -25,10 +25,18 @@
 </article>
 
 <style lang="scss">
-	$tint: transparentize(#24273a, 0.5);
-	$wallpaper: url(/wallpaper.jpg);
+	section#introduction {
+		margin: 2rem 1rem 0 1rem;
+		padding: 1rem;
+		background: var(--ctp-macchiato-mantle);
+		border-radius: 2rem;
+		text-align: center;
+	}
 
 	section#parallax {
+		--tint-color: rgba(var(--ctp-macchiato-base-raw), 0.5);
+		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
+
 		min-height: 60vh;
 		padding: 1rem;
 		color: var(--ctp-macchiato-yellow);
@@ -40,7 +48,7 @@
 		align-items: center;
 
 		background: {
-			image: linear-gradient(0deg, $tint, $tint), $wallpaper;
+			image: var(--tint), url(/wallpaper.jpg);
 			attachment: fixed;
 			position: center;
 			repeat: no-repeat;

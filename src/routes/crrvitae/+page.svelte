@@ -17,10 +17,6 @@
 <style>
 	section {
 		height: 70vh;
-		margin: 1rem 0;
-		padding: 1rem;
-		border-radius: 1rem;
-		background: var(--ctp-macchiato-mantle);
 	}
 
 	iframe {
