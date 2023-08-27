@@ -14,7 +14,7 @@
 To be used in the Connect page to showcase Social accounts -->
 
 <a {href} rel="noreferrer noopener" target="_blank">
-	<img {src} alt="{name} icon" />
+	<img {src} alt="{name} icon" data-sveltekit-preload-data/>
 	<h4>{name}</h4>
 	<p>{username}</p>
 </a>

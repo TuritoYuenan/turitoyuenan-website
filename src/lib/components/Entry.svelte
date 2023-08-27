@@ -15,6 +15,15 @@
 		<p><slot /></p>
 	</div>
 	<div slot="two">
-		<img src={img} alt="" class="locked" />
+		<a {href}><img src={img} alt="" class="locked" /></a>
 	</div>
 </Dual>
+
+<style>
+	img {
+		transition: var(--default-transition);
+		&:hover {
+			scale: 110%;
+		}
+	}
+</style>

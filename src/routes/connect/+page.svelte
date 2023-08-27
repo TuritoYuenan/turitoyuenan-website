@@ -45,4 +45,9 @@
 		@include r-grid(300px);
 		gap: 1rem;
 	}
+
+	h2 {
+		margin-top: 1rem;
+		margin-bottom: 1.5rem;
+	}
 </style>

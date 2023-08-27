@@ -24,15 +24,15 @@ export const entries = [
 	),
 	new MenuEntry('Projects', 'projects', 'peach', 'Showcases of my projects'),
 	new MenuEntry(
-		'Contacts',
-		'contacts',
+		'Connect',
+		'connect',
 		'green',
-		"Let's keep in touch. I am available on many social media"
+		'You can find me on many social network platforms'
 	),
 	new MenuEntry(
-		'My CV',
+		'CVitae',
 		'crrvitae',
 		'blue',
-		'My Curriculum Vitae for job purposes'
+		'For possible work or internship recruiters, you can check out my Curriculum Vitae (CV) here'
 	)
 ];
