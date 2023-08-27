@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"detail": "vite dev --open",
+			"label": "npm: start",
+			"script": "start",
+			"type": "npm",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"detail": "vite build",
+			"label": "npm: build",
+			"script": "build",
+			"type": "npm",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		}
+	]
+}
