@@ -6,6 +6,9 @@
 	color: var(--ctp-macchiato-text);
 	font-size: large;
 	font-family: 'Work Sans', Arial, sans-serif;
+
+	// Default transition
+	--default-transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 * {
@@ -32,9 +35,6 @@ h1 {
 a {
 	text-decoration: none;
 	color: var(--ctp-macchiato-yellow);
-	&:hover {
-		text-decoration: underline;
-	}
 }
 
 body {
@@ -48,6 +48,10 @@ main {
 article {
 	width: 1000px;
 	margin: auto;
+
+	a:hover {
+		text-decoration: underline;
+	}
 
 	@media (max-width: 1000px) {
 		width: auto;

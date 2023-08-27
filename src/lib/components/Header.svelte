@@ -25,5 +25,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+
+        @media (max-width: 750px) {
+            text-align: center;
+        }
 	}
 </style>

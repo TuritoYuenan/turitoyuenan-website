@@ -47,9 +47,10 @@
 		a {
 			padding: 0.5rem;
 			border-bottom: 3pt solid transparent;
+			transition: var(--default-transition);
 
 			&:hover {
-				background: var(--ctp-macchiato-base);
+				background: var(--ctp-macchiato-surface0);
 			}
 			&.active {
 				border-bottom-color: currentColor;
