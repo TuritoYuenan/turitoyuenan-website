@@ -14,14 +14,14 @@
 	<section id="introduction">
 		<h2>👋 Salutations</h2>
 		<p>
-			I am a university student from Vietnam, currently studying
-			Computer Science.
+			I am a university student from Vietnam, currently studying Computer
+			Science.
 		</p>
 		<p>I also have an interest in Natural science, Linguistics and Art.</p>
 	</section>
-	{#each entries as { accent, name, href, desc }, i}
+	{#each entries as { color, name, href, desc }, i}
 		{@const flip = (i + 1) % 2 === 0}
-		<Entry {href} {flip} title={name} color="var(--ctp-macchiato-{accent})">
+		<Entry {href} {flip} title={name} color="var(--ctp-macchiato-{color})">
 			{desc}
 		</Entry>
 	{/each}
@@ -37,9 +37,6 @@
 	}
 
 	section#parallax {
-		--tint-color: rgba(var(--ctp-macchiato-base-raw), 0.5);
-		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
-
 		min-height: 60vh;
 		padding: 1rem;
 		color: var(--ctp-macchiato-yellow);
@@ -49,6 +46,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		--tint-color: rgba(var(--ctp-macchiato-base-raw), 0.5);
+		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
 
 		background: {
 			image: var(--tint), url(/wallpaper.jpg);
@@ -60,11 +60,9 @@
 
 		h1 {
 			font-size: clamp(4rem, 10vw, 7rem);
-			font-variant: small-caps;
 		}
 
 		p {
-			font-weight: bold;
 			font-size: clamp(2rem, 3vw, 4rem);
 		}
 	}

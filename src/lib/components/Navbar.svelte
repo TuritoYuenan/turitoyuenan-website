@@ -1,9 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	export let menu = ['Entry', 'Entry', 'Entry', 'Entry'];
-
+	/**
+	 * Underline the active entry
+	 */
 	$: path = $page.url.pathname;
+
 	const mac = (color) => `var(--ctp-macchiato-${color})`;
+	export let menu = [];
 </script>
 
 <!-- @component The top navigation bar -->
@@ -12,8 +15,8 @@
 		<img src="/wordmark.svg" alt="Turito Yuenan" />
 	</a>
 	<div>
-		{#each menu as { accent, name, href }}
-			<a {href} style:color={mac(accent)} class:active={path === href}>{name}</a>
+		{#each menu as { color, name, href }}
+			<a {href} style:color={mac(color)} class:active={path === href}>{name}</a>
 		{/each}
 	</div>
 </nav>
@@ -43,12 +46,13 @@
 		width: fit-content;
 		a {
 			padding: 0.5rem;
+			border-bottom: 3pt solid transparent;
 
 			&:hover {
 				background: var(--ctp-macchiato-base);
 			}
 			&.active {
-				border-bottom: 3pt solid currentColor;
+				border-bottom-color: currentColor;
 			}
 		}
 	}

@@ -1,27 +1,38 @@
-/** The website's menu entries */
-export const entries = [
-	{
-		accent: 'red',
-		name: 'Articles',
-		href: '/articles',
-		desc: 'I sometimes write blogs and articles about various topics'
-	},
-	{
-		accent: 'peach',
-		name: 'Projects',
-		href: '/projects',
-		desc: 'Showcases of my projects'
-	},
-	{
-		accent: 'green',
-		name: 'Contacts',
-		href: '/contacts',
-		desc: "Let's keep in touch. I am available on many social media"
-	},
-	{
-		accent: 'blue',
-		name: 'My CV',
-		href: '/crrvitae',
-		desc: 'My Curriculum Vitae for job purposes'
+class MenuEntry {
+	/**
+	 * Create a menu entry, used in navigation bar
+	 * @param {string} name Entry name
+	 * @param {string} id Entry ID, used for navigation
+	 * @param {string} description A description about the entry
+	 * @param {string} color The entry's accent color
+	 */
+	constructor(name, id, color, description) {
+		this.name = name;
+		this.href = '/' + id;
+		this.desc = description;
+		this.color = color;
 	}
+}
+
+/** List of menu entries */
+export const entries = [
+	new MenuEntry(
+		'Articles',
+		'articles',
+		'red',
+		'I sometimes write blogs and articles about various topics'
+	),
+	new MenuEntry('Projects', 'projects', 'peach', 'Showcases of my projects'),
+	new MenuEntry(
+		'Contacts',
+		'contacts',
+		'green',
+		"Let's keep in touch. I am available on many social media"
+	),
+	new MenuEntry(
+		'My CV',
+		'crrvitae',
+		'blue',
+		'My Curriculum Vitae for job purposes'
+	)
 ];
