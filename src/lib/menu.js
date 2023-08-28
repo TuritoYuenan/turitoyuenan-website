@@ -31,7 +31,7 @@ export const entries = [
 	),
 	new MenuEntry(
 		'CVitae',
-		'crrvitae',
+		'cvitae',
 		'blue',
 		'For possible work or internship recruiters, you can check out my Curriculum Vitae (CV) here'
 	)
