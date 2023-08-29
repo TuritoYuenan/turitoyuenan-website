@@ -4,7 +4,7 @@
 	import { entries } from '../lib/menu';
 </script>
 
-<Metadata title="Homepage" />
+<Metadata title="Homepage" desc="Homepage" />
 
 <section id="parallax">
 	<h1>Turito Yuenan</h1>
@@ -48,7 +48,7 @@
 		--tint-color: rgba(var(--ctp-macchiato-base-raw), 0.5);
 		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
 
-		background: var(--tint), url(/wallpaper.jpg) fixed center no-repeat;
+		background: var(--tint), url(/wallpaper.webp) fixed center no-repeat;
 		background-size: cover;
 
 		h1 {

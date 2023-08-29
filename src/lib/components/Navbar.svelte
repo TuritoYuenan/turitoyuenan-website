@@ -10,7 +10,7 @@
 <!-- @component The top navigation bar -->
 <nav>
 	<a href="/" id="wordmark">
-		<img src="/wordmark.svg" alt="Turito Yuenan" />
+		<img src="/wordmark.svg" width="380" height="125" alt="Wordmark" />
 	</a>
 	<div>
 		{#each entries as { color, name, href }}
@@ -30,6 +30,7 @@
 		overflow: hidden;
 
 		img {
+			width: auto;
 			height: 3em;
 			border-radius: 0.5em;
 			&:hover {
