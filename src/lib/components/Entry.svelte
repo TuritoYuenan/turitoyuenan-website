@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
 	import Dual from './Dual.svelte';
 
-	export let title = 'Title';
-	export let color = 'inherit';
-	export let href = '#';
-	export let img = `/icons/${href}.svg`;
-	export let flip;
+	export let title: string = 'Title';
+	export let color: string = 'inherit';
+	export let href: string = '#';
+	export let img: string = `/icons${href}.svg`;
+	export let flip: boolean;
 </script>
 
 <!-- @component Used to procedually introduce the website's menu entries -->
@@ -21,6 +21,7 @@
 
 <style>
 	img {
+		height: 100%;
 		transition: var(--default-transition);
 		&:hover {
 			scale: 110%;

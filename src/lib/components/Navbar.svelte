@@ -1,8 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	/**
-	 * Underline the active entry
-	 */
+
+	/** Underline the active entry */
 	$: path = $page.url.pathname;
 
 	const mac = (color) => `var(--ctp-macchiato-${color})`;

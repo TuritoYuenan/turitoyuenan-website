@@ -4,4 +4,4 @@
  * Returns an Artstation link
  * @param {string} path
  */
-export const artStation = (path) => `https://artstation.com/${path}`;
+export const artStation = (path: string) => `https://artstation.com/${path}`;

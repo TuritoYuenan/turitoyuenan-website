@@ -1,5 +1,5 @@
-<script>
-	export let flip = false;
+<script lang="ts">
+	export let flip: boolean = false;
 </script>
 
 <!-- @component Two parallel contents, responsively collapse on small width -->
@@ -12,7 +12,7 @@
 	</slot>
 </section>
 
-<style lang="scss">
+<style>
 	section {
 		padding: 1rem;
 		display: grid;

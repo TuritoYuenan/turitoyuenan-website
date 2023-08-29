@@ -1,5 +1,14 @@
 class SocialAccount {
-	constructor(name, site, username) {
+	name: string;
+	href: string;
+	username: string;
+	/**
+	 * Create a social account entry
+	 * @param {string} name Platform name
+	 * @param {string} site Platform address
+	 * @param {string} username Username
+	 */
+	constructor(name: string, site: string, username: string) {
 		this.name = name;
 		this.href = 'https://' + site + username;
 		this.username = username;

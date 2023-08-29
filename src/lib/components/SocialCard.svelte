@@ -1,13 +1,13 @@
-<script>
-	/** @type {String} Platform name */
-	export let name = 'Example';
-	/** @type {String} Platform website */
-	export let href = 'https://example.com';
-	/** @type {String} Account's username */
-	export let username = '@User';
+<script lang="ts">
+	/** @type {string} Platform name */
+	export let name: string = 'Example';
+	/** @type {string} Platform website */
+	export let href: string = 'https://example.com';
+	/** @type {string} The account's username */
+	export let username: string = '@User';
 
-	/** @type {String} Platform icon image source */
-	let src = `/logos/${name.toLowerCase()}.svg`;
+	/** @type {string} Platform icon image source */
+	let src: string = `/logos/${name.toLowerCase()}.svg`;
 </script>
 
 <!-- @component Card for displaying an account on a specific website

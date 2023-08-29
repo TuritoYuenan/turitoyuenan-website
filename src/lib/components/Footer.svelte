@@ -1,14 +1,14 @@
 <script>
 	import { page } from '$app/stores';
-	import { artStation } from '../../lib/websites';
+	import { artStation } from '../websites';
 
-	$: isHomepage = $page.url.pathname === '/';
+	$: atHomepage = $page.url.pathname === '/';
 </script>
 
 <footer>
 	<p>&COPY; 2023 Minh Triet</p>
 	<p><a href="https://catppuccin.com">Catppuccin</a> color palette</p>
-	{#if isHomepage}
+	{#if atHomepage}
 		<p>
 			<a href={artStation('artwork/9NJ28q')}>"Rooftop Farms"</a>
 			by <a href={artStation('jessicawoulfe')}>Jessica Woulfe</a>
@@ -16,7 +16,7 @@
 	{/if}
 </footer>
 
-<style lang="scss">
+<style>
 	footer {
 		padding: 1rem;
 		background: var(--ctp-macchiato-mantle);

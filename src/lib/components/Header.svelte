@@ -1,14 +1,8 @@
-<script>
-    /**
-     * Header title
-     * @type {string}
-     */
-    export let title = 'Header';
-    /**
-     * Header title color
-     * @type {string}
-     */
-    export let color = '';
+<script lang="ts">
+    /** @type {string} Header title */
+    export let title: string = 'Header';
+    /** @type {string} Header title color */
+    export let color: string = '';
 </script>
 
 <!-- @component Header for category pages -->
@@ -16,7 +10,7 @@
     <h1 style:color>{title}</h1>
 </header>
 
-<style lang="scss">
+<style>
 	header {
 		min-height: 20vh;
 		padding: 2rem;

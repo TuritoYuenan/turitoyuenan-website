@@ -1,7 +1,7 @@
 <script>
 	import Metadata from '../lib/components/Metadata.svelte';
 	import Entry from '../lib/components/Entry.svelte';
-	import { entries } from '../lib/menu.js';
+	import { entries } from '../lib/menu';
 </script>
 
 <Metadata title="Homepage" />
@@ -50,13 +50,8 @@
 		--tint-color: rgba(var(--ctp-macchiato-base-raw), 0.5);
 		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
 
-		background: {
-			image: var(--tint), url(/wallpaper.jpg);
-			attachment: fixed;
-			position: center;
-			repeat: no-repeat;
-			size: cover;
-		}
+		background: var(--tint), url(/wallpaper.jpg) fixed center no-repeat;
+		background-size: cover;
 
 		h1 {
 			font-size: clamp(4rem, 10vw, 7rem);
