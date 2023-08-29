@@ -5,7 +5,7 @@
 	import '$styles/global.scss';
 </script>
 
-<Navbar menu={entries} />
+<Navbar {entries} />
 <main>
 	<slot />
 </main>

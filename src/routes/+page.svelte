@@ -19,11 +19,9 @@
 		</p>
 		<p>I also have an interest in Natural science, Linguistics and Art.</p>
 	</section>
-	{#each entries as { color, name, href, desc }, i}
+	{#each entries as entry, i}
 		{@const flip = (i + 1) % 2 === 0}
-		<Entry {href} {flip} title={name} color="var(--ctp-macchiato-{color})">
-			{desc}
-		</Entry>
+		<Entry data={entry} {flip} />
 	{/each}
 </article>
 

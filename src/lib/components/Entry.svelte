@@ -1,27 +1,32 @@
 <script lang="ts">
+	import type { MenuEntry } from '../menu';
 	import Dual from './Dual.svelte';
 
-	export let title: string = 'Title';
-	export let color: string = 'inherit';
-	export let href: string = '#';
-	export let img: string = `/icons${href}.svg`;
 	export let flip: boolean;
+	export let data: MenuEntry = {
+		name: 'Entry',
+		href: '/#',
+		desc: 'Lorem ipsum dolor sit amet',
+		color: 'inherit'
+	};
+
+	let { name, href, color, desc } = data;
+	let img: string = `/icons${href}.svg`;
 </script>
 
 <!-- @component Used to procedually introduce the website's menu entries -->
 <Dual {flip}>
 	<div slot="one">
-		<h1><a {href} style:color>{title}</a></h1>
-		<p><slot /></p>
+		<h1><a {href} style:color>{name}</a></h1>
+		<slot><p>{desc}</p></slot>
 	</div>
 	<div slot="two">
-		<a {href}><img src={img} alt="" class="locked" /></a>
+		<a {href}><img src={img} alt='Icon for {name}' class="locked" /></a>
 	</div>
 </Dual>
 
 <style>
 	img {
-		height: 100%;
 		transition: var(--default-transition);
 		&:hover {
 			scale: 110%;

@@ -24,11 +24,11 @@
 			"problemMatcher": []
 		},
 		{
-			"type": "npm",
-			"script": "format",
-			"problemMatcher": [],
+			"detail": "prettier --plugin-search-dir . --write .",
 			"label": "npm: format",
-			"detail": "prettier --plugin-search-dir . --write ."
+			"script": "format",
+			"type": "npm",
+			"problemMatcher": []
 		}
 	]
 }

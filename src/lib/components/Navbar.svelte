@@ -4,8 +4,7 @@
 	/** Underline the active entry */
 	$: path = $page.url.pathname;
 
-	const mac = (color) => `var(--ctp-macchiato-${color})`;
-	export let menu = [];
+	export let entries = [];
 </script>
 
 <!-- @component The top navigation bar -->
@@ -14,8 +13,8 @@
 		<img src="/wordmark.svg" alt="Turito Yuenan" />
 	</a>
 	<div>
-		{#each menu as { color, name, href }}
-			<a {href} style:color={mac(color)} class:active={path === href}>{name}</a>
+		{#each entries as { color, name, href }}
+			<a {href} style:color class:active={path === href}>{name}</a>
 		{/each}
 	</div>
 </nav>
