@@ -11,7 +11,7 @@
 	};
 
 	let { name, href, color, desc } = data;
-	let img: string = `/icons${href}.svg`;
+	let img: string = `/icons/${name.toLowerCase()}.svg`;
 </script>
 
 <!-- @component Used to procedually introduce the website's menu entries -->
@@ -21,12 +21,16 @@
 		<slot><p>{desc}</p></slot>
 	</div>
 	<div slot="two">
-		<a {href}><img src={img} alt='Icon for {name}' class="locked" /></a>
+		<a {href}>
+			<img src={img} alt="Icon for {name}" width="800" height="800" />
+		</a>
 	</div>
 </Dual>
 
 <style>
 	img {
+		width: 100%;
+		height: auto;
 		transition: var(--default-transition);
 		&:hover {
 			scale: 110%;

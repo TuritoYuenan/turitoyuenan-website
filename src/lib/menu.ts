@@ -11,7 +11,7 @@ export interface MenuEntry {
 export const entries: MenuEntry[] = [
 	{
 		name: 'Articles',
-		href: '/articles',
+		href: 'https://turitoyuenan.github.io/articles',
 		color: variants.macchiato.red.hex,
 		desc: 'I sometimes write blogs and articles about various topics'
 	},
@@ -29,7 +29,7 @@ export const entries: MenuEntry[] = [
 	},
 	{
 		name: 'CVitae',
-		href: '/cvitae',
+		href: 'https://turitoyuenan.github.io/cvitae',
 		color: variants.macchiato.blue.hex,
 		desc: 'For possible work or internship recruiters, you can check out my Curriculum Vitae (CV) here'
 	}

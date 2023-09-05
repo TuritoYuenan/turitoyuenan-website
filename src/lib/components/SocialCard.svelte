@@ -34,6 +34,7 @@ To be used in the Connect page to showcase Social accounts -->
 
 		&:hover {
 			background-color: var(--ctp-macchiato-surface0);
+			text-decoration: none;
 		}
 	}
 </style>
