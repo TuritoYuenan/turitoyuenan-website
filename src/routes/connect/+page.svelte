@@ -1,8 +1,8 @@
 <script>
 	import { variants } from '@catppuccin/palette';
-	import Header from '../../lib/components/Header.svelte';
-	import Metadata from '../../lib/components/Metadata.svelte';
-	import SocialCard from '../../lib/components/SocialCard.svelte';
+	import Header from '$components/Header.svelte';
+	import Metadata from '$components/Metadata.svelte';
+	import SocialCard from '$components/SocialCard.svelte';
 
 	const title = 'Connect';
 

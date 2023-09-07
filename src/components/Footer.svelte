@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import { artStation, webArchive, wikiCommon } from '../websites';
+	import { wikiCommon, webArchive } from '$lib/websites';
 
 	$: atHomepage = $page.url.pathname === '/';
 

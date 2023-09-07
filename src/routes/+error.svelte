@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import Metadata from '../lib/components/Metadata.svelte';
+	import Metadata from '$components/Metadata.svelte';
 </script>
 
 <Metadata title='{$page.status} {$page.error.message}' />

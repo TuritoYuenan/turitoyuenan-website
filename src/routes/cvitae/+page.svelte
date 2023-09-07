@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { variants } from '@catppuccin/palette';
-	import Header from '../../lib/components/Header.svelte';
-	import Metadata from '../../lib/components/Metadata.svelte';
+	import Metadata from '$components/Metadata.svelte';
+	import Header from '$components/Header.svelte';
 
 	const title: string = 'My Curriculum Vitae';
 	const src: string = 'https://drive.google.com/file/d/1ZdrqAAYJ8mUP1uIBY4aJyyjxVVpSXprH/preview';

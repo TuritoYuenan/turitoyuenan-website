@@ -1,7 +1,7 @@
 <script>
-	import Metadata from '../lib/components/Metadata.svelte';
-	import Entry from '../lib/components/Entry.svelte';
-	import { entries } from '../lib/menu';
+	import Metadata from '$components/Metadata.svelte';
+	import Entry from '$components/Entry.svelte';
+	import { entries } from '$lib/menu';
 </script>
 
 <Metadata title="Homepage" desc="Homepage" />
@@ -36,7 +36,9 @@
 
 	section#parallax {
 		min-height: 60vh;
+		margin: 1rem;
 		padding: 1rem;
+		border-radius: 2rem;
 		color: var(--ctp-macchiato-yellow);
 		text-align: center;
 
