@@ -8,7 +8,7 @@
 
 <section id="parallax">
 	<h1>Turito Yuenan</h1>
-	<p>Curious CS Student</p>
+	<p>hello. I am a Computer Science student from Vietnam</p>
 </section>
 <article>
 	<section id="introduction">
@@ -37,9 +37,9 @@
 	section#parallax {
 		min-height: 60vh;
 		margin: 1rem;
-		padding: 1rem;
+		padding: 3rem;
 		border-radius: 2rem;
-		color: var(--ctp-macchiato-yellow);
+		color: var(--ctp-macchiato-text);
 		text-align: center;
 
 		display: flex;
@@ -50,7 +50,9 @@
 		--tint-color: rgba(var(--ctp-macchiato-base-raw), 0.5);
 		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
 
-		background: var(--tint), url(/wallpaper.webp) fixed center no-repeat;
+		background:
+			var(--tint),
+			url(/wallpaper.webp) fixed center no-repeat;
 		background-size: cover;
 
 		h1 {
@@ -58,7 +60,8 @@
 		}
 
 		p {
-			font-size: clamp(2rem, 3vw, 4rem);
+			margin: 0;
+			font-size: 2rem;
 		}
 	}
 </style>

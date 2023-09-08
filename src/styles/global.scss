@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('@catppuccin/palette/style');
 
 :root {
 	background: var(--ctp-macchiato-base);
 	color: var(--ctp-macchiato-text);
 	font-size: large;
-	font-family: 'Work Sans', Arial, sans-serif;
+	font-family: 'Lato', Helvetica, sans-serif;
 
 	// Default transition
 	--default-transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -28,7 +27,7 @@ ol {
 }
 
 h1 {
-	font-variant: small-caps;
+	// font-variant: small-caps;
 	font-size: 3em;
 }
 
