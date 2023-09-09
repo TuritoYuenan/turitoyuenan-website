@@ -1,13 +1,15 @@
 <script>
 	import { variants } from '@catppuccin/palette';
+	import {
+		workAccounts,
+		casualAccounts,
+		blogAccounts
+	} from '$lib/social-accounts';
 	import Header from '$components/Header.svelte';
 	import Metadata from '$components/Metadata.svelte';
 	import SocialCard from '$components/SocialCard.svelte';
 
 	const title = 'Connect';
-
-	/** @type {import('./$types').PageData} */
-	export let data;
 </script>
 
 <Metadata {title} />
@@ -15,22 +17,21 @@
 <article>
 	<h2>Work</h2>
 	<section>
-		{#each data.work as { href, name, username }}
-			<SocialCard {href} {name} {username} />
+		{#each workAccounts as account}
+			<SocialCard {account} />
 		{/each}
 	</section>
 	<h2>Casual</h2>
 	<section>
-		{#each data.casual as { href, name, username }}
-			<SocialCard {href} {name} {username} />
+		{#each casualAccounts as account}
+			<SocialCard {account} />
 		{/each}
 	</section>
 	<h2>Blog</h2>
 	<section>
-		<SocialCard
-			href={data.blog[0].href}
-			name={data.blog[0].name}
-			username="turitoyuenan.tumblr.com" />
+		{#each blogAccounts as account}
+			<SocialCard {account} />
+		{/each}
 	</section>
 </article>
 

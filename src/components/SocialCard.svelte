@@ -1,25 +1,28 @@
 <script lang="ts">
-	/** @type {string} Platform name */
-	export let name: string = 'Example';
-	/** @type {string} Platform website */
-	export let href: string = 'https://example.com';
-	/** @type {string} The account's username */
-	export let username: string = '@User';
+	import type { SocialAccount } from "$lib/social-accounts";
+	
+	export let account: SocialAccount = {
+		username: '@User6561',
+		platform: 'Example',
+		website: 'example.com'
+	};
 
-	/** @type {string} Platform icon image source */
-	let src: string = `/logos/${name.toLowerCase()}.svg`;
+	/** Link to the account */
+	const href: string = `https://${account.website}/${account.username}`;
+	/** Platform icon image source */
+	const src: string = `/logos/${account.platform.toLowerCase()}.svg`;
 </script>
 
 <!-- @component Card for displaying an account on a specific website
 To be used in the Connect page to showcase Social accounts -->
 
 <a {href} rel="noreferrer noopener" target="_blank">
-	<img {src} alt="{name} icon" data-sveltekit-preload-data/>
-	<h4>{name}</h4>
-	<p>{username}</p>
+	<img {src} alt="{account.platform} icon" data-sveltekit-preload-data/>
+	<h4>{account.platform}</h4>
+	<p>{account.username}</p>
 </a>
 
-<style>
+<style lang="scss">
 	img {
 		height: 3em;
 	}
@@ -33,7 +36,7 @@ To be used in the Connect page to showcase Social accounts -->
 		color: inherit;
 
 		&:hover {
-			background-color: var(--ctp-macchiato-surface0);
+			background: var(--ctp-macchiato-surface0);
 			text-decoration: none;
 		}
 	}
