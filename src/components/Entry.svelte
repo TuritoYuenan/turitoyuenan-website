@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { MenuEntry } from '../menu';
-	import Dual from './Dual.svelte';
+	import Dual from '$components/Dual.svelte';
+	import type { MenuEntry } from '$lib/menu';
 
 	export let flip: boolean;
 	export let data: MenuEntry = {

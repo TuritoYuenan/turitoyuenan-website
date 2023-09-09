@@ -1,7 +1,7 @@
 <script lang="ts">
-    /** @type {string} Header title */
+    /** Header title */
     export let title: string = 'Header';
-    /** @type {string} Header title color */
+    /** Header title color */
     export let color: string = '';
 </script>
 

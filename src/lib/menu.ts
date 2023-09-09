@@ -1,3 +1,5 @@
+// List of menu entries
+
 import { variants } from '@catppuccin/palette';
 
 export interface MenuEntry {

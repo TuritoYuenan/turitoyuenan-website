@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
+	
+	/** List of menu entries to be displayed on navbar */
+	export let entries: import('$lib/menu').MenuEntry[] = [];
 
 	/** Underline the active entry */
 	$: path = $page.url.pathname;
-
-	export let entries = [];
 </script>
 
 <!-- @component The top navigation bar -->

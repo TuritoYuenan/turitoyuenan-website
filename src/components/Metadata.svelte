@@ -1,6 +1,7 @@
 <script lang="ts">
-    /** @type {string} Current page's title */
+    /** Current page's title */
     export let title: string;
+    /** Current page's description or purpose */
     export let desc: string = "Turito Yuenan's website";
 </script>
 
