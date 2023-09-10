@@ -1,13 +1,14 @@
 <script>
+	import Header from '$components/Header.svelte';
+	import Metadata from '$components/Metadata.svelte';
+	import SocialCard from '$components/SocialCard.svelte';
+
 	import { variants } from '@catppuccin/palette';
 	import {
 		workAccounts,
 		casualAccounts,
 		blogAccounts
-	} from '$lib/social-accounts';
-	import Header from '$components/Header.svelte';
-	import Metadata from '$components/Metadata.svelte';
-	import SocialCard from '$components/SocialCard.svelte';
+	} from '$lib/socialAccounts';
 
 	const title = 'Connect';
 </script>

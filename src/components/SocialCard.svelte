@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { SocialAccount } from "$lib/social-accounts";
+	import type { SocialAccount } from "$lib/socialAccounts";
 	
 	export let account: SocialAccount = {
 		username: '@User6561',
@@ -18,8 +18,10 @@ To be used in the Connect page to showcase Social accounts -->
 
 <a {href} rel="noreferrer noopener" target="_blank">
 	<img {src} alt="{account.platform} icon" data-sveltekit-preload-data/>
-	<h4>{account.platform}</h4>
-	<p>{account.username}</p>
+	<div>
+		<h4>{account.platform}</h4>
+		<p>{account.username}</p>
+	</div>
 </a>
 
 <style lang="scss">
@@ -28,12 +30,15 @@ To be used in the Connect page to showcase Social accounts -->
 	}
 
 	a {
-		display: block;
 		padding: 1rem;
 		background: var(--ctp-macchiato-mantle);
 		transition: var(--default-transition);
 		border-radius: 0.5rem;
 		color: inherit;
+		
+		display: flex;
+		align-items: center;
+		gap: 1rem;
 
 		&:hover {
 			background: var(--ctp-macchiato-surface0);

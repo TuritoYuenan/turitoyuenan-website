@@ -1,4 +1,4 @@
-import { workAccounts, casualAccounts, blogAccounts } from "$lib/social-accounts";
+import { workAccounts, casualAccounts, blogAccounts } from "$lib/socialAccounts";
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {

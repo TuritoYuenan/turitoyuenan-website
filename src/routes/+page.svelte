@@ -8,7 +8,7 @@
 
 <section id="parallax">
 	<h1>Turito Yuenan</h1>
-	<p>hello. I am a Computer Science student from Vietnam</p>
+	<p>Computer Science Freshman at Swinburne VN</p>
 </section>
 <article>
 	<section id="introduction">
@@ -37,7 +37,7 @@
 	section#parallax {
 		min-height: 60vh;
 		margin: 1rem;
-		padding: 3rem;
+		padding: 2rem;
 		border-radius: 2rem;
 		color: var(--ctp-macchiato-text);
 		text-align: center;

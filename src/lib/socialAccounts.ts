@@ -18,6 +18,11 @@ const workAccounts: SocialAccount[] = [
 		username: 'in/trietntm-cs'
 	},
 	{
+		platform: 'LeetCode',
+		website: 'www.leetcode.com',
+		username: 'TuritoYuenan'
+	},
+	{
 		platform: 'Replit',
 		website: 'www.replit.com/',
 		username: '@TuritoYuenan'
@@ -52,6 +57,11 @@ const blogAccounts: SocialAccount[] = [
 		platform: 'Tumblr',
 		website: 'tumblr.com',
 		username: 'turitoyuenan'
+	},
+	{
+		platform: 'Hugo',
+		website: 'turitoyuenan.github.io',
+		username: 'articles'
 	}
 ];
 
