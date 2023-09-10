@@ -52,8 +52,9 @@
 
 		background:
 			var(--tint),
-			url(/wallpaper.webp) fixed center no-repeat;
+			url(/wallpaper.webp) no-repeat;
 		background-size: cover;
+		background-position-y: -60px;
 
 		h1 {
 			font-size: clamp(4rem, 10vw, 7rem);

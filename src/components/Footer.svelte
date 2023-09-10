@@ -1,15 +1,9 @@
 <script>
 	import { page } from '$app/stores';
-	import { wikiCommon, webArchive } from '$lib/websites';
+	import { wikiCommon } from '$lib/websites';
 
 	$: atHomepage = $page.url.pathname === '/';
-
-	// Homepage banner image's source and author
-	const href = wikiCommon('File:Earthship_Community_home_2_-_panoramio.jpg');
-	const author = webArchive(
-		20161025094921,
-		'http://www.panoramio.com/user/3187235?with_photo_id=70613336'
-	);
+	const href = wikiCommon('Institution:Imperial_City_of_Huế');
 </script>
 
 <footer>
@@ -18,9 +12,10 @@
 		<p><a href="https://catppuccin.com">Catppuccin</a> color palette</p>
 		{#if atHomepage}
 			<p>
-				<a {href}>"Earthship Community home 2"</a> by
-				<a href={author}>Dameon Hudson</a><br />is licensed under the
-				Creative Commons Attribution 3.0 Unported license.
+				Photo manually taken at
+				<a {href} target="_blank" rel="noreferrer noopener"
+					>Imperial city of Huế</a>
+				<br /> on 29-Jul-2022 at 15:25
 			</p>
 		{/if}
 	</div>
