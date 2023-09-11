@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	
+
 	/** List of menu entries to be displayed on navbar */
 	export let entries: import('$lib/menu').MenuEntry[] = [];
 
@@ -11,7 +11,7 @@
 <!-- @component The top navigation bar -->
 <nav>
 	<a href="/" id="wordmark">
-		<img src="/wordmark.svg" width="380" height="125" alt="Wordmark" />
+		<img src="/wordmark.svg" width="349" height="160" alt="Wordmark" />
 	</a>
 	<div>
 		{#each entries as { color, name, href }}
@@ -24,28 +24,32 @@
 	nav {
 		padding: 1rem;
 		background: var(--ctp-macchiato-mantle);
+		overflow: hidden;
+
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
-		overflow: hidden;
 
 		img {
 			width: auto;
-			height: 3em;
-			border-radius: 0.5em;
+			height: 4em;
+			transition: var(--default-transition);
 			&:hover {
-				filter: drop-shadow(0 0 5px var(--ctp-macchiato-peach));
+				filter: drop-shadow(0 0 5px var(--ctp-macchiato-yellow));
 			}
 		}
 	}
 
 	div {
+		width: fit-content;
+
 		display: flex;
 		flex-wrap: wrap;
-		width: fit-content;
+
 		a {
 			padding: 0.5rem;
+			border-top: 3pt solid transparent;
 			border-bottom: 3pt solid transparent;
 			transition: var(--default-transition);
 
