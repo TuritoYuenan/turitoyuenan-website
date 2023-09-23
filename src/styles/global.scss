@@ -1,7 +1,7 @@
 @import url('@catppuccin/palette/style');
 
 :root {
-	background: var(--ctp-macchiato-base);
+	background: var(--ctp-macchiato-mantle);
 	color: var(--ctp-macchiato-text);
 	font-size: large;
 	font-family: 'Lato', Helvetica, sans-serif;
@@ -46,6 +46,8 @@ body {
 
 main {
 	min-height: 80vh;
+	padding: 1rem;
+	background: var(--ctp-macchiato-base);
 }
 
 article {

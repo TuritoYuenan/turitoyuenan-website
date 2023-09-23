@@ -23,7 +23,6 @@
 <style lang="scss">
 	nav {
 		padding: 1rem;
-		background: var(--ctp-macchiato-mantle);
 		overflow: hidden;
 
 		display: flex;

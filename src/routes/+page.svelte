@@ -6,7 +6,7 @@
 
 <Metadata title="Homepage" desc="Homepage" />
 
-<section id="parallax">
+<section id="parallax" data-sveltekit-preload-data>
 	<h1>Turito Yuenan</h1>
 	<p>Computer Science Freshman at Swinburne VN</p>
 </section>
@@ -27,7 +27,7 @@
 
 <style lang="scss">
 	section#introduction {
-		margin: 2rem 1rem 0 1rem;
+		margin: 1rem;
 		padding: 1rem;
 		background: var(--ctp-macchiato-mantle);
 		border-radius: 2rem;
@@ -36,7 +36,6 @@
 
 	section#parallax {
 		min-height: 60vh;
-		margin: 1rem;
 		padding: 2rem;
 		border-radius: 2rem;
 		color: var(--ctp-macchiato-text);

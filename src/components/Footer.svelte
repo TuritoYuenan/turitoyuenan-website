@@ -24,7 +24,6 @@
 <style>
 	footer {
 		padding: 1rem;
-		background: var(--ctp-macchiato-mantle);
 		text-align: center;
 	}
 
