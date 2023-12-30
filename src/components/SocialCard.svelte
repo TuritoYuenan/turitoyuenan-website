@@ -24,14 +24,14 @@ To be used in the Connect page to showcase Social accounts -->
 	</div>
 </a>
 
-<style lang="scss">
+<style>
 	img {
 		height: 3em;
 	}
 
 	a {
 		padding: 1rem;
-		background: var(--ctp-macchiato-mantle);
+		background: var(--ctp-frappe-mantle);
 		transition: var(--default-transition);
 		border-radius: 0.5rem;
 		color: inherit;
@@ -41,7 +41,7 @@ To be used in the Connect page to showcase Social accounts -->
 		gap: 1rem;
 
 		&:hover {
-			background: var(--ctp-macchiato-surface0);
+			background: var(--ctp-frappe-surface0);
 			text-decoration: none;
 		}
 	}

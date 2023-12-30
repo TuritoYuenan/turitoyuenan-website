@@ -1,7 +1,7 @@
 // List of menu entries
 
 import { flavors } from '@catppuccin/palette';
-const colors = flavors.macchiato.colors;
+const colors = flavors.frappe.colors;
 
 export interface MenuEntry {
 	name: string;

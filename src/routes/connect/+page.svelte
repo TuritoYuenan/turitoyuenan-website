@@ -14,7 +14,7 @@
 </script>
 
 <Metadata {title} />
-<Header {title} color={flavors.macchiato.colors.green.hex} />
+<Header {title} color={flavors.frappe.colors.green.hex} />
 <article>
 	<h2>Work</h2>
 	<section>
@@ -36,15 +36,14 @@
 	</section>
 </article>
 
-<style lang="scss">
-	@use '$styles/grid' as *;
-
+<style>
 	article {
 		padding: 1rem;
 	}
 
 	section {
-		@include r-grid(300px);
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 1rem;
 	}
 

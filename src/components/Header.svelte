@@ -14,7 +14,7 @@
 	header {
 		min-height: 20vh;
 		padding: 2rem;
-		background: var(--ctp-macchiato-crust);
+		background: var(--ctp-frappe-crust);
 
 		display: flex;
 		flex-direction: column;

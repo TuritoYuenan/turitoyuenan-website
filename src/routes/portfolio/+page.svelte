@@ -7,7 +7,7 @@
 </script>
 
 <Metadata {title} />
-<Header {title} color={flavors.macchiato.colors.blue.hex} />
+<Header {title} color={flavors.frappe.colors.blue.hex} />
 
 <article></article>
 

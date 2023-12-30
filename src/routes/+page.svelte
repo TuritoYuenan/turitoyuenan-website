@@ -7,7 +7,7 @@
 
 <Metadata title="Homepage" desc="Homepage" />
 
-<section id="parallax" data-sveltekit-preload-data>
+<section id="banner">
 	<h1>{strings.heroTitle}</h1>
 	<p>{strings.heroSubtitle}</p>
 </section>
@@ -24,20 +24,22 @@
 	{/each}
 </article>
 
-<style lang="scss">
+<style>
 	section#introduction {
 		margin: 1rem;
 		padding: 1rem;
-		background: var(--ctp-macchiato-mantle);
+		background: var(--ctp-frappe-mantle);
 		border-radius: 2rem;
 		text-align: center;
+
+		& p {
+			margin-inline: auto;
+		}
 	}
 
-	section#parallax {
+	section#banner {
 		min-height: 60vh;
 		padding: 2rem;
-		border-radius: 2rem;
-		color: var(--ctp-macchiato-text);
 		text-align: center;
 
 		display: flex;
@@ -48,17 +50,16 @@
 		--tint-color: #24273a80;
 		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
 
-		background:
-			var(--tint),
-			url(/wallpaper.webp) no-repeat;
+		background: var(--tint), url(/wallpaper.webp);
 		background-size: cover;
+		background-repeat: no-repeat;
 		background-position-y: -60px;
 
-		h1 {
+		& h1 {
 			font-size: clamp(4rem, 10vw, 7rem);
 		}
 
-		p {
+		& p {
 			margin: 0;
 			font-size: 2rem;
 		}

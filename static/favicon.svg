@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-    <path fill="#EED49F"
-        d="M26.5 41.5l-7.5 30h39l-11.25 45 37.35-45 24.9-30H65.5l7.5-30H34l-7.5 30z" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg">
+	<rect x="60" y="60" width="200" height="200" fill="none" stroke="#fcaf3c" stroke-width="20"/>
+	<path d="m110 130-10 40h52l-15 60 83-100h-58l10-40h-52l-10 40z" fill="#FCAF3C"/>
+	<circle cx="60" cy="60" r="40" fill="#f06"/>
+	<circle cx="260" cy="60" r="40" fill="#f7770f"/>
+	<circle cx="60" cy="260" r="40" fill="#009473"/>
+	<circle cx="260" cy="260" r="40" fill="#06f"/>
 </svg>

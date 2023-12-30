@@ -7,16 +7,11 @@
 		"start": "vite dev --open",
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "vite preview",
-		"lint": "prettier --plugin-search-dir . --check .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"preview": "vite preview"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^3.0.1",
 		"@sveltejs/kit": "^2.0.6",
-		"prettier": "^3.1.1",
-		"prettier-plugin-svelte": "^3.1.2",
-		"sass": "^1.69.6",
 		"svelte": "^4.2.8",
 		"vite": "^5.0.10"
 	},

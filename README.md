@@ -1,6 +1,6 @@
-# My personal website
+# Personal website
 
-This repo contains source code and data of my own personal website made with SvelteKit (+extensions), SASS and Catppuccin color palette.
+Repo for my personal website, using SvelteKit and Catppuccin color palette.
 
 ## Usage
 
@@ -14,14 +14,12 @@ npm run preview # Preview build
 
 ## Tech stack
 
--   Repository: Github
--   Frontend: SvelteKit
-    -   Deployment: Cloudflare Pages
-    -   UI Library: Svelte
-    -   Build tool: Vite
--   Content Management: [Hugo](https://github.com/TuritoYuenan/turitoyuenan.github.io)
-    -   Deployment: Github Pages
--   Coding languages
-    -   HTML
-    -   CSS with SASS preprocessing
-    -   JavaScript with TypeScript preprocessing
+- HTML & CSS
+- Programming language:
+    - JavaScript
+    - TypeScript preprocessing
+- Frontend: SvelteKit
+    - UI Library: Svelte
+    - Build tool: Vite
+- Repository: GitHub
+- Deployment: Cloudflare Pages
