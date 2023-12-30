@@ -1,23 +1,22 @@
 <script lang="ts">
 	import Metadata from '$components/Metadata.svelte';
 	import Entry from '$components/Entry.svelte';
+	import strings from '$lib/strings';
 	import { entries } from '$lib/menu';
 </script>
 
 <Metadata title="Homepage" desc="Homepage" />
 
 <section id="parallax" data-sveltekit-preload-data>
-	<h1>Turito Yuenan</h1>
-	<p>Computer Science Student at Swinburne VN</p>
+	<h1>{strings.heroTitle}</h1>
+	<p>{strings.heroSubtitle}</p>
 </section>
 <article>
 	<section id="introduction">
-		<h2>👋 Salutations</h2>
-		<p>
-			I am a university student from Vietnam, currently studying Computer
-			Science.
-		</p>
-		<p>I also have an interest in Natural science, Linguistics and Art.</p>
+		<h2>{strings.introTitle}</h2>
+		{#each strings.introSubtitle as line}
+			<p>{line}</p>
+		{/each}
 	</section>
 	{#each entries as entry, i}
 		{@const flip = (i + 1) % 2 === 0}
