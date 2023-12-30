@@ -1,68 +1,63 @@
 // List of my social accounts
 
-interface SocialAccount {
+interface SocialProfile {
 	username: string;
 	platform: string;
 	website: string;
 }
 
-const workAccounts: SocialAccount[] = [
+const workProfiles: SocialProfile[] = [
 	{
 		platform: 'Github',
-		website: 'www.github.com/',
+		website: 'github.com',
 		username: 'TuritoYuenan'
 	},
 	{
 		platform: 'LinkedIn',
-		website: 'www.linkedin.com/',
+		website: 'linkedin.com',
 		username: 'in/trietntm-cs'
 	},
 	{
 		platform: 'LeetCode',
-		website: 'www.leetcode.com',
+		website: 'leetcode.com',
 		username: 'TuritoYuenan'
 	},
 	{
 		platform: 'Replit',
-		website: 'www.replit.com/',
+		website: 'replit.com',
 		username: '@TuritoYuenan'
 	}
 ];
 
-const casualAccounts: SocialAccount[] = [
+const casualProfiles: SocialProfile[] = [
 	{
 		platform: 'Facebook',
-		website: 'www.facebook.com/',
+		website: 'facebook.com',
 		username: 'TuritoYuenan'
 	},
 	{
 		platform: 'Pinterest',
-		website: 'www.pinterest.com/',
+		website: 'pinterest.com',
 		username: 'TuritoYuenan'
 	},
 	{
 		platform: 'Reddit',
-		website: 'www.reddit.com/',
+		website: 'reddit.com',
 		username: 'u/LeaderTurito'
 	},
 	{
 		platform: 'Twitter',
-		website: 'www.twitter.com/',
+		website: 'twitter.com',
 		username: 'TuritoYuenan'
 	}
 ];
 
-const blogAccounts: SocialAccount[] = [
+const blogSites: SocialProfile[] = [
 	{
 		platform: 'Tumblr',
 		website: 'tumblr.com',
 		username: 'turitoyuenan'
-	},
-	{
-		platform: 'Hugo',
-		website: 'turitoyuenan.github.io',
-		username: 'articles'
 	}
 ];
 
-export { workAccounts, casualAccounts, blogAccounts, type SocialAccount };
+export { workProfiles, casualProfiles, blogSites, type SocialProfile };

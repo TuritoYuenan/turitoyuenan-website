@@ -5,7 +5,8 @@
  * @param path Path
  * @returns An Artstation link
  */
-export const artStation = (path: string) => `https://artstation.com/${path}`;
+export const artStation = (path: string) =>
+	`https://artstation.com/${path}`;
 
 /**
  * Wikipedia Commons asset

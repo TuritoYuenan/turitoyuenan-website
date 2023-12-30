@@ -1,6 +1,7 @@
 // List of menu entries
 
-import { variants } from '@catppuccin/palette';
+import { flavors } from '@catppuccin/palette';
+const colors = flavors.macchiato.colors;
 
 export interface MenuEntry {
 	name: string;
@@ -12,27 +13,28 @@ export interface MenuEntry {
 /** List of menu entries */
 export const entries: MenuEntry[] = [
 	{
-		name: 'Articles',
-		href: 'https://turitoyuenan.github.io/articles',
-		color: variants.macchiato.red.hex,
-		desc: 'I sometimes write blogs and articles about various topics'
+		name: 'Contents',
+		href: '/contents',
+		color: colors.red.hex,
+		desc: `I sometimes write blogs and articles about various topics`
 	},
 	{
 		name: 'Projects',
 		href: '/projects',
-		color: variants.macchiato.peach.hex,
-		desc: 'Showcases of my projects'
+		color: colors.peach.hex,
+		desc: `Showcases of my projects`
 	},
 	{
 		name: 'Connect',
 		href: '/connect',
-		color: variants.macchiato.green.hex,
-		desc: 'You can find me on many social network platforms'
+		color: colors.green.hex,
+		desc: `You can find me on many social network platforms`
 	},
 	{
-		name: 'CVitae',
-		href: 'https://turitoyuenan.github.io/cvitae',
-		color: variants.macchiato.blue.hex,
-		desc: 'For possible work or internship recruiters, you can check out my Curriculum Vitae (CV) here'
+		name: 'Portfolio',
+		href: '/portfolio',
+		color: colors.blue.hex,
+		desc: `Possible recruiters can check out my Portfolio
+		to walk through my academic skills, education, and projects`
 	}
 ];

@@ -1,10 +1,10 @@
-@import url('@catppuccin/palette/style');
+@import url('@catppuccin/palette/css/catppuccin.css');
 
 :root {
 	background: var(--ctp-macchiato-mantle);
 	color: var(--ctp-macchiato-text);
 	font-size: large;
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Lexend', sans-serif;
 
 	// Default transition
 	--default-transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -27,7 +27,6 @@ ol {
 }
 
 h1 {
-	// font-variant: small-caps;
 	font-size: 3em;
 }
 

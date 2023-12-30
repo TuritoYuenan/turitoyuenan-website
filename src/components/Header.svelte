@@ -1,13 +1,13 @@
 <script lang="ts">
-    /** Header title */
-    export let title: string = 'Header';
-    /** Header title color */
-    export let color: string = '';
+	/** Header title */
+	export let title: string = 'Header';
+	/** Header title color */
+	export let color: string = '';
 </script>
 
 <!-- @component Header for category pages -->
 <header>
-    <h1 style:color>{title}</h1>
+	<h1 style:color>{title}</h1>
 </header>
 
 <style>
@@ -20,8 +20,8 @@
 		flex-direction: column;
 		justify-content: center;
 
-        @media (max-width: 750px) {
-            text-align: center;
-        }
+		@media (max-width: 750px) {
+			text-align: center;
+		}
 	}
 </style>

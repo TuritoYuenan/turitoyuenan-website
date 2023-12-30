@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Metadata from '$components/Metadata.svelte';
 	import Entry from '$components/Entry.svelte';
 	import { entries } from '$lib/menu';
@@ -8,7 +8,7 @@
 
 <section id="parallax" data-sveltekit-preload-data>
 	<h1>Turito Yuenan</h1>
-	<p>Computer Science Freshman at Swinburne VN</p>
+	<p>Computer Science Student at Swinburne VN</p>
 </section>
 <article>
 	<section id="introduction">
@@ -46,7 +46,7 @@
 		justify-content: center;
 		align-items: center;
 
-		--tint-color: rgba(var(--ctp-macchiato-base-raw), 0.5);
+		--tint-color: #24273a80;
 		--tint: linear-gradient(0deg, var(--tint-color), var(--tint-color));
 
 		background:

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import { wikiCommon } from '$lib/websites';
 
@@ -8,14 +8,17 @@
 
 <footer>
 	<div>
-		<p>&COPY; 2023 Minh Triet</p>
-		<p><a href="https://catppuccin.com">Catppuccin</a> color palette</p>
+		<p>
+			&COPY; 2023 Nguyen Ta Minh Triet | using <a
+				target="_blank"
+				rel="noreferrer noopener"
+				href="https://catppuccin.com">Catppuccin</a> color palette
+		</p>
 		{#if atHomepage}
 			<p>
-				Photo manually taken at
-				<a {href} target="_blank" rel="noreferrer noopener"
-					>Imperial city of Huế</a>
-				<br /> on 29-Jul-2022 at 15:25
+				Photo manually taken at the
+				<a target="_blank" rel="noreferrer noopener" {href}
+					>Imperial city of Huế</a> (29-Jul-2022 15:25)
 			</p>
 		{/if}
 	</div>

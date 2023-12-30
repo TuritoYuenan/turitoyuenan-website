@@ -1,36 +1,36 @@
-<script>
+<script lang="ts">
 	import Header from '$components/Header.svelte';
 	import Metadata from '$components/Metadata.svelte';
 	import SocialCard from '$components/SocialCard.svelte';
 
-	import { variants } from '@catppuccin/palette';
+	import { flavors } from '@catppuccin/palette';
 	import {
-		workAccounts,
-		casualAccounts,
-		blogAccounts
-	} from '$lib/socialAccounts';
+		workProfiles,
+		casualProfiles,
+		blogSites
+	} from '$lib/social-profiles';
 
 	const title = 'Connect';
 </script>
 
 <Metadata {title} />
-<Header {title} color={variants.macchiato.green.hex} />
+<Header {title} color={flavors.macchiato.colors.green.hex} />
 <article>
 	<h2>Work</h2>
 	<section>
-		{#each workAccounts as account}
+		{#each workProfiles as account}
 			<SocialCard {account} />
 		{/each}
 	</section>
 	<h2>Casual</h2>
 	<section>
-		{#each casualAccounts as account}
+		{#each casualProfiles as account}
 			<SocialCard {account} />
 		{/each}
 	</section>
 	<h2>Blog</h2>
 	<section>
-		{#each blogAccounts as account}
+		{#each blogSites as account}
 			<SocialCard {account} />
 		{/each}
 	</section>

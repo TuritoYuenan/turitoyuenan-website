@@ -1,10 +1,6 @@
-import {
-	workAccounts,
-	casualAccounts,
-	blogAccounts
-} from '$lib/socialAccounts';
+import { workProfiles, casualProfiles, blogSites } from '$lib/social-profiles';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
-	return { workAccounts, casualAccounts, blogAccounts };
+	return { workProfiles, casualProfiles, blogSites };
 }

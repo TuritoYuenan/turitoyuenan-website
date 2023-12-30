@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { SocialAccount } from "$lib/socialAccounts";
-	
-	export let account: SocialAccount = {
+	import type { SocialProfile } from '$lib/social-profiles';
+
+	export let account: SocialProfile = {
 		username: '@User6561',
 		platform: 'Example',
 		website: 'example.com'
@@ -17,7 +17,7 @@
 To be used in the Connect page to showcase Social accounts -->
 
 <a {href} rel="noreferrer noopener" target="_blank">
-	<img {src} alt="{account.platform} icon" data-sveltekit-preload-data/>
+	<img {src} alt="{account.platform} icon" data-sveltekit-preload-data />
 	<div>
 		<h4>{account.platform}</h4>
 		<p>{account.username}</p>
@@ -35,7 +35,7 @@ To be used in the Connect page to showcase Social accounts -->
 		transition: var(--default-transition);
 		border-radius: 0.5rem;
 		color: inherit;
-		
+
 		display: flex;
 		align-items: center;
 		gap: 1rem;
