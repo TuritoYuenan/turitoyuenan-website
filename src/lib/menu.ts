@@ -11,7 +11,7 @@ export interface MenuEntry {
 }
 
 /** List of menu entries */
-export const entries: MenuEntry[] = [
+const entries: MenuEntry[] = [
 	{
 		name: 'Contents',
 		href: '/contents',
@@ -38,3 +38,5 @@ export const entries: MenuEntry[] = [
 		to walk through my academic skills, education, and projects`
 	}
 ];
+
+export default entries;

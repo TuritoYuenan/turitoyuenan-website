@@ -2,14 +2,14 @@
 	import Metadata from '$components/Metadata.svelte';
 	import Entry from '$components/Entry.svelte';
 	import strings from '$lib/strings';
-	import { entries } from '$lib/menu';
+	import entries from '$lib/menu';
 </script>
 
-<Metadata title="Homepage" desc="Homepage" />
+<Metadata title="Homepage" desc="Turito Yuenan's Website" />
 
 <section id="banner">
-	<h1>{strings.heroTitle}</h1>
-	<p>{strings.heroSubtitle}</p>
+	<h1>{strings.bannerTitle}</h1>
+	<p>{strings.bannerSubtitle}</p>
 </section>
 <article>
 	<section id="introduction">
@@ -53,7 +53,6 @@
 		background: var(--tint), url(/wallpaper.webp);
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position-y: -60px;
 
 		& h1 {
 			font-size: clamp(4rem, 10vw, 7rem);

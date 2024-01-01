@@ -1,9 +1,8 @@
 <script lang="ts">
 	import Dual from '$components/Dual.svelte';
-	import type { MenuEntry } from '$lib/menu';
 
 	export let flip: boolean;
-	export let data: MenuEntry = {
+	export let data: import('$lib/menu').MenuEntry = {
 		name: 'Entry',
 		href: '/#',
 		desc: 'Lorem ipsum dolor sit amet',
