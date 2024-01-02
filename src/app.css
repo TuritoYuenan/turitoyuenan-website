@@ -1,10 +1,10 @@
 @import url('@catppuccin/palette/css/catppuccin.css');
 
 :root {
-	background: var(--ctp-frappe-mantle);
-	color: var(--ctp-frappe-text);
-	font-size: large;
+	background: var(--ctp-macchiato-base);
+	color: var(--ctp-macchiato-text);
 	font-family: 'Lexend', sans-serif;
+	font-size: 20px;
 
 	/* Default transition */
 	--default-transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -35,23 +35,18 @@ p, li {
 
 a {
 	text-decoration: none;
-	color: var(--ctp-frappe-yellow);
+	color: var(--ctp-macchiato-yellow);
 }
 
 body {
 	margin: 0;
 }
 
-main {
-	min-height: 80vh;
-	background: var(--ctp-frappe-base);
-}
-
 article {
 	width: 1000px;
 	margin: auto;
 
-	a:hover {
+	& a:hover {
 		text-decoration: underline;
 	}
 
@@ -60,7 +55,32 @@ article {
 	}
 }
 
+button {
+	padding: 0.5rem 1rem;
+	color: var(--ctp-macchiato-crust);
+	background-color: var(--ctp-macchiato-yellow);
+	font-family: inherit;
+	font-size: 1rem;
+	border: none;
+	border-radius: 1rem;
+	transition: var(--default-transition);
+
+	&:hover {
+		scale: 1.1;
+	}
+	
+	&:active {
+		scale: 1;
+	}
+}
+
 ::selection {
-	background: var(--ctp-frappe-yellow);
-	color: var(--ctp-frappe-base);
+	background: var(--ctp-macchiato-yellow);
+	color: var(--ctp-macchiato-base);
+}
+
+@media (max-width: 800px) {
+	p {
+		min-width: 0;
+	}
 }

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Container from './Container.svelte';
+
 	/** Header title */
 	export let title: string = 'Header';
 	/** Header title color */
@@ -6,15 +8,15 @@
 </script>
 
 <!-- @component Header for category pages -->
-<header>
-	<h1 style:color>{title}</h1>
-</header>
+<Container name="banner" paddingRem={2}>
+	<header>
+		<h1 style:color>{title}</h1>
+	</header>
+</Container>
 
 <style>
 	header {
-		min-height: 20vh;
-		padding: 2rem;
-		background: var(--ctp-frappe-crust);
+		min-height: 10vh;
 
 		display: flex;
 		flex-direction: column;
