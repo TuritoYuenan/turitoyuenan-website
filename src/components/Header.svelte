@@ -1,3 +1,5 @@
+<!-- @component Header for category pages -->
+
 <script lang="ts">
 	import Container from './Container.svelte';
 
@@ -7,7 +9,6 @@
 	export let color: string = '';
 </script>
 
-<!-- @component Header for category pages -->
 <Container name="banner" paddingRem={2}>
 	<header>
 		<h1 style:color>{title}</h1>

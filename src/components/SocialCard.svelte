@@ -1,3 +1,6 @@
+<!-- @component Card for displaying an account on a specific website.
+To be used in the Connect page to showcase Social accounts -->
+
 <script lang="ts">
 	import type { SocialProfile } from '$lib/social-profiles';
 
@@ -12,9 +15,6 @@
 	/** Platform icon image source */
 	const src: string = `/logos/${profile.platform.toLowerCase()}.svg`;
 </script>
-
-<!-- @component Card for displaying an account on a specific website
-To be used in the Connect page to showcase Social accounts -->
 
 <a {href} rel="noreferrer noopener" target="_blank">
 	<img {src} alt="{profile.platform} icon" data-sveltekit-preload-data />
