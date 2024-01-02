@@ -7,5 +7,5 @@
 </script>
 
 <Metadata {title} />
-<Header {title} color={flavors.frappe.colors.peach.hex} />
+<Header {title} color={flavors.frappe.colors.red.hex} />
 <Container name="projects"></Container>

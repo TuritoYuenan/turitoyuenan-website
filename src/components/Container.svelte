@@ -3,7 +3,10 @@
 	export let paddingRem: number = 1;
 </script>
 
-<section style:grid-area={name} style:padding={paddingRem + 'rem'} class={name}>
+<section
+	style:grid-area={name}
+	style:padding={paddingRem + 'rem'}
+	class={name + '-container'}>
 	<slot />
 </section>
 

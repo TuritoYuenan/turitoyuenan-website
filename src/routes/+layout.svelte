@@ -9,7 +9,7 @@
 
 <main>
 	<Container name="wordmark" paddingRem={0.5}>
-		<a href="/" id="wordmark-container">
+		<a href="/" id="wordmark-container" aria-label="Go to home page">
 			<Wordmark />
 		</a>
 	</Container>
@@ -28,9 +28,9 @@
 		grid-template-areas:
 			'wordmark navbar navbar'
 			'banner banner banner'
+			'aboutme aboutme connect'
 			'projects projects projects'
 			'contents contents contents'
-			'aboutme aboutme connect'
 			'footer footer footer';
 
 		@media (max-width: 800px) {
