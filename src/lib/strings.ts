@@ -1,7 +1,7 @@
 const csite = 'https://catppuccin.com';
 
 export default {
-	copyright: `&COPY; 2023 Nguyen Ta Minh Triet | Using <a target="_blank" ${csite}>Catppuccin</a> color palette`,
+	copyright: `&COPY; 2023 Nguyen Ta Minh Triet | Using <a target="_blank" href="${csite}">Catppuccin</a> color palette`,
 	bannerTitle: 'Turito Yuenan',
 	bannerSubtitle: 'Computer Science Student at Swinburne Vietnam',
 	introTitle: '👋Salutations',

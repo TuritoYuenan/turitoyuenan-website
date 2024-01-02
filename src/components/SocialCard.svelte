@@ -19,22 +19,14 @@ To be used in the Connect page to showcase Social accounts -->
 <a {href} rel="noreferrer noopener" target="_blank">
 	<img {src} alt="{profile.platform} icon" data-sveltekit-preload-data />
 	<div>
-		<h4>{profile.platform}</h4>
-		<p>{profile.username}</p>
+		<p class="platform">{profile.platform}</p>
+		<p class="username">{profile.username}</p>
 	</div>
 </a>
 
 <style>
-	p {
-		min-width: 1rem;
-	}
-
-	img {
-		height: 3em;
-	}
-
 	a {
-		padding: 1rem;
+		padding: 0 1rem;
 		background: var(--ctp-macchiato-base);
 		transition: var(--default-transition);
 		border-radius: 0.5rem;
@@ -48,5 +40,20 @@ To be used in the Connect page to showcase Social accounts -->
 			background: var(--ctp-macchiato-surface0);
 			text-decoration: none;
 		}
+	}
+
+	img {
+		width: auto;
+		height: 3em;
+		aspect-ratio: 1 / 1;
+	}
+
+	p {
+		min-width: 1rem;
+	}
+
+	p.platform {
+		margin-block: 1rem 0.5rem;
+		font-weight: bold;
 	}
 </style>
