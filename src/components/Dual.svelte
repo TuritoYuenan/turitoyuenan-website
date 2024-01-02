@@ -1,8 +1,9 @@
+<!-- @component Two parallel contents, responsively collapse on small width -->
+
 <script lang="ts">
 	export let flip: boolean = false;
 </script>
 
-<!-- @component Two parallel contents, responsively collapse on small width -->
 <section style:direction={flip ? 'rtl' : ''}>
 	<slot name="one">
 		<p>Lorem ipsum dolor sit amet</p>

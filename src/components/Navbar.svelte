@@ -1,3 +1,5 @@
+<!-- @component The top navigation bar -->
+
 <script lang="ts">
 	import { page } from '$app/stores';
 	import Container from './Container.svelte';
@@ -9,7 +11,6 @@
 	$: path = $page.url.pathname;
 </script>
 
-<!-- @component The top navigation bar -->
 <Container name="navbar">
 	<nav>
 		{#each entries as { color, name, href }}
