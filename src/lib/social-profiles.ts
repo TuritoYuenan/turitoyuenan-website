@@ -61,3 +61,4 @@ const blogSites: SocialProfile[] = [
 ];
 
 export { workProfiles, casualProfiles, blogSites, type SocialProfile };
+export default [ workProfiles[0], workProfiles[1], casualProfiles[0], casualProfiles[3] ]

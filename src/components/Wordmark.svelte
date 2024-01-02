@@ -28,10 +28,5 @@
 	svg {
 		width: auto;
 		height: 4em;
-		transition: var(--default-transition);
-
-		&:hover {
-			scale: 1.1;
-		}
 	}
 </style>

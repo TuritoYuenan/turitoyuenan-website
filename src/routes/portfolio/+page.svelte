@@ -1,15 +1,18 @@
 <script lang="ts">
 	import { flavors } from '@catppuccin/palette';
-	import Metadata from '$components/Metadata.svelte';
 	import Header from '$components/Header.svelte';
+	import Metadata from '$components/Metadata.svelte';
+	import Container from '$components/Container.svelte';
 
-	const title: string = 'My Portfolio';
+	const title: string = 'Portfolio';
 </script>
 
 <Metadata {title} />
-<Header {title} color={flavors.frappe.colors.blue.hex} />
+<Header title="Nguyen Ta Minh Triet" color={flavors.frappe.colors.blue.hex} />
 
-<article></article>
+<Container name="projects">
+	<article></article>
+</Container>
 
 <style>
 	article {

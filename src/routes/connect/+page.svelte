@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Header from '$components/Header.svelte';
 	import Metadata from '$components/Metadata.svelte';
+	import Container from '$components/Container.svelte';
 	import SocialCard from '$components/SocialCard.svelte';
 
 	import { flavors } from '@catppuccin/palette';
@@ -15,32 +16,28 @@
 
 <Metadata {title} />
 <Header {title} color={flavors.frappe.colors.green.hex} />
-<article>
+<Container name="projects">
 	<h2>Work</h2>
 	<section>
-		{#each workProfiles as account}
-			<SocialCard {account} />
+		{#each workProfiles as profile}
+			<SocialCard {profile} />
 		{/each}
 	</section>
 	<h2>Casual</h2>
 	<section>
-		{#each casualProfiles as account}
-			<SocialCard {account} />
+		{#each casualProfiles as profile}
+			<SocialCard {profile} />
 		{/each}
 	</section>
 	<h2>Blog</h2>
 	<section>
-		{#each blogSites as account}
-			<SocialCard {account} />
+		{#each blogSites as profile}
+			<SocialCard {profile} />
 		{/each}
 	</section>
-</article>
+</Container>
 
 <style>
-	article {
-		padding: 1rem;
-	}
-
 	section {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

@@ -1,7 +1,7 @@
 // List of menu entries
 
 import { flavors } from '@catppuccin/palette';
-const colors = flavors.frappe.colors;
+const colors = flavors.macchiato.colors;
 
 export interface MenuEntry {
 	name: string;
@@ -13,16 +13,16 @@ export interface MenuEntry {
 /** List of menu entries */
 const entries: MenuEntry[] = [
 	{
-		name: 'Contents',
-		href: '/contents',
-		color: colors.red.hex,
-		desc: `I sometimes write blogs and articles about various topics`
-	},
-	{
 		name: 'Projects',
 		href: '/projects',
-		color: colors.peach.hex,
+		color: colors.red.hex,
 		desc: `Showcases of my projects`
+	},
+	{
+		name: 'Contents',
+		href: '/contents',
+		color: colors.peach.hex,
+		desc: `I sometimes write blogs and articles about various topics`
 	},
 	{
 		name: 'Connect',
