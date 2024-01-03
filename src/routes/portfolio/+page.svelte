@@ -10,12 +10,20 @@
 <Metadata {title} />
 <Header title="Nguyen Ta Minh Triet" color={flavors.frappe.colors.blue.hex} />
 
-<Container name="projects">
-	<article></article>
+<Container name="aboutme">
+	<h2>(Under Construction)</h2>
 </Container>
 
-<style>
-	article {
-		height: 70vh;
-	}
-</style>
+<Container name="connect">
+	<h2>(Under Construction)</h2>
+</Container>
+
+<Container name="projects">
+	<h2>(Under Construction)</h2>
+</Container>
+
+<Container name="contents">
+	<h2>(Under Construction)</h2>
+</Container>
+
+<style></style>

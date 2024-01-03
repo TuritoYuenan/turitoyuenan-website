@@ -11,11 +11,7 @@
 <Header {title} color={flavors.frappe.colors.peach.hex} />
 
 <Container name="projects">
-	<article></article>
+	<h2>(Under Construction)</h2>
 </Container>
 
-<style>
-	article {
-		padding: 1rem;
-	}
-</style>
+<style></style>
