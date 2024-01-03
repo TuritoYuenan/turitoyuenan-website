@@ -21,18 +21,20 @@
 	<section>
 		{#each workProfiles as profile}
 			<SocialCard {profile} />
-		{/each}
-	</section>
+			{/each}
+		</section>
+</Container>
+<Container name="contents">
 	<h2>Casual</h2>
 	<section>
 		{#each casualProfiles as profile}
-			<SocialCard {profile} />
+		<SocialCard {profile} />
 		{/each}
 	</section>
 	<h2>Blog</h2>
 	<section>
 		{#each blogSites as profile}
-			<SocialCard {profile} />
+		<SocialCard {profile} />
 		{/each}
 	</section>
 </Container>

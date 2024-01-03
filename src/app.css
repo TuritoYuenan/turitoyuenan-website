@@ -29,7 +29,6 @@ p, ul, ol {
 }
 
 p, li {
-	min-width: 45ch;
 	max-width: 75ch;
 }
 
@@ -55,7 +54,7 @@ article {
 	}
 }
 
-button {
+button, a.cta {
 	padding: 0.5rem 1rem;
 	color: var(--ctp-macchiato-crust);
 	background-color: var(--ctp-macchiato-yellow);
@@ -77,10 +76,4 @@ button {
 ::selection {
 	background: var(--ctp-macchiato-yellow);
 	color: var(--ctp-macchiato-base);
-}
-
-@media (max-width: 800px) {
-	p {
-		min-width: 0;
-	}
 }

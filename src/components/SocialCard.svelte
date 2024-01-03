@@ -48,10 +48,6 @@ To be used in the Connect page to showcase Social accounts -->
 		aspect-ratio: 1 / 1;
 	}
 
-	p {
-		min-width: 1rem;
-	}
-
 	p.platform {
 		margin-block: 1rem 0.5rem;
 		font-weight: bold;
