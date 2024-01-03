@@ -9,7 +9,7 @@
 	export let color: string = '';
 </script>
 
-<Container name="banner" paddingRem={2}>
+<Container name="banner">
 	<header>
 		<h1 style:color>{title}</h1>
 	</header>

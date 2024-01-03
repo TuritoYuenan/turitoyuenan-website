@@ -4,8 +4,6 @@
 	import SocialCard from '$components/SocialCard.svelte';
 	import profiles from '$lib/social-profiles';
 	import strings from '$lib/strings';
-
-	const portfolio = () => (window.location.href = '/portfolio');
 </script>
 
 <Metadata title="Homepage" desc={strings.bannerSubtitle} />
@@ -16,7 +14,7 @@
 			<h1>{strings.bannerTitle}</h1>
 			<p>{strings.bannerSubtitle}</p>
 		</div>
-		<button on:click={portfolio}>View my Portfolio</button>
+		<a class="cta" href="portfolio">View my Portfolio</a>
 	</header>
 </Container>
 
