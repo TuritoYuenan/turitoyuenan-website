@@ -16,25 +16,28 @@
 
 <Metadata {title} />
 <Header {title} color={flavors.macchiato.colors.green.hex} />
-<Container name="projects">
+<Container name="aboutme">
 	<h2>Work</h2>
 	<section>
 		{#each workProfiles as profile}
 			<SocialCard {profile} />
-			{/each}
-		</section>
+		{/each}
+	</section>
 </Container>
-<Container name="contents">
+<Container name="projects">
 	<h2>Casual</h2>
 	<section>
 		{#each casualProfiles as profile}
-		<SocialCard {profile} />
+			<SocialCard {profile} />
 		{/each}
 	</section>
+</Container>
+
+<Container name="connect">
 	<h2>Blog</h2>
 	<section>
 		{#each blogSites as profile}
-		<SocialCard {profile} />
+			<SocialCard {profile} />
 		{/each}
 	</section>
 </Container>
