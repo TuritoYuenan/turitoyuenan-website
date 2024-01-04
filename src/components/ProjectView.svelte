@@ -1,11 +1,19 @@
 <script lang="ts">
+	import { flavors } from '@catppuccin/palette';
 	import { type Project } from '$lib/projects';
+	import { displayDate } from '$lib/utilities';
 
 	export let current: Project;
 
-	function displayDate({ year, month, day }: Project['date']) {
-		return `${year}-${month}-${day}`;
-	}
+	const colors = flavors.macchiato.colors;
+	const projectStatus = [
+		{ name: 'Idea', color: colors.yellow.hex },
+		{ name: 'Working', color: colors.blue.hex },
+		{ name: 'Completed', color: colors.green.hex },
+		{ name: 'Cancelled', color: colors.red.hex }
+	];
+
+	$: currentStatus = projectStatus[current.status];
 </script>
 
 <div class="project-view">
@@ -20,7 +28,7 @@
 
 	<div style:grid-area="status">
 		<h3>Status</h3>
-		<p>{current.status}</p>
+		<p style:color={currentStatus.color}>{currentStatus.name}</p>
 	</div>
 
 	<div style:grid-area="category">

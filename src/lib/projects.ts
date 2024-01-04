@@ -1,4 +1,4 @@
-type ProjectStatus = 'Idea' | 'Working' | 'Completed' | 'Cancelled';
+enum ProjectStatus { Idea, Working, Completed, Cancelled };
 type ProjectCategory = 'App' | 'Design' | 'Device' | 'Fiction' | 'Game' | 'Robot' | 'Website';
 
 export interface Project {
@@ -16,7 +16,7 @@ const projects: Project[] = [
 		name: 'ZimmerWetter',
 		tools: ['VSCode', 'Wokwi', 'Blynk', 'Figma', 'C++'],
 		tags: ['IoT', 'Arduino', 'ESP32', 'Weather'],
-		status: 'Completed',
+		status: ProjectStatus.Completed,
 		category: 'Device',
 		date: { year: 2023, month: 11, day: 21 },
 		description: `An IoT device for monitoring weather (temperature and humidity) of your room,
@@ -26,7 +26,7 @@ const projects: Project[] = [
 		name: 'Personal Website',
 		tools: ['VSCode', 'SvelteKit', 'Vite', 'Node.js', 'Figma', 'JS/TS'],
 		tags: ['Website', 'Front-end', 'Portfolio'],
-		status: 'Working',
+		status: ProjectStatus.Working,
 		category: 'Website',
 		date: { year: 2022, month: 5, day: 30 },
 		description: `A website about me and my stuffs - which you are looking at right now!`,
@@ -35,7 +35,7 @@ const projects: Project[] = [
 		name: 'OMORI Animatics',
 		tools: ['VSCode', 'Svelte', 'Vite', 'Deno', 'JS/TS'],
 		tags: ['Website', 'Front-end', 'OMORI', 'Game'],
-		status: 'Completed',
+		status: ProjectStatus.Completed,
 		category: 'Website',
 		date: { year: 2023, month: 4, day: 10 },
 		description: `A website that displays a collection of OMORI animatic videos from YouTube`,
@@ -44,7 +44,7 @@ const projects: Project[] = [
 		name: 'Bibman',
 		tools: ['VSCode', 'TTY::Prompt', 'Ruby'],
 		tags: ['Bibliography', 'CLI', 'University'],
-		status: 'Completed',
+		status: ProjectStatus.Completed,
 		category: 'App',
 		date: { year: 2023, month: 11, day: 25 },
 		description: `A bibliography manager program used in the command line.
@@ -54,7 +54,7 @@ const projects: Project[] = [
 		name: 'Knabino Magia',
 		tools: ['VSCode', 'Hugo', 'Svelte', 'JS/TS', 'Figma', 'Inkscape'],
 		tags: ['Worldbuilding', 'Fantasy', 'Fiction', 'CMS'],
-		status: 'Completed',
+		status: ProjectStatus.Completed,
 		category: 'Fiction',
 		date: { year: 2023, month: 11, day: 25 },
 		description: `A fantasy fiction that features magical girls around the world,
@@ -64,7 +64,7 @@ const projects: Project[] = [
 		name: 'Planet KEARTH',
 		tools: ['VSCode', 'Adobe Illustrator', 'Inkscape'],
 		tags: ['Worldbuilding', 'Fantasy', 'Fan-Fiction'],
-		status: 'Cancelled',
+		status: ProjectStatus.Cancelled,
 		category: 'Fiction',
 		date: { year: 2019, month: 10, day: 4 },
 		description: `A scrapped fan-fiction of Undertale featuring an original fictional

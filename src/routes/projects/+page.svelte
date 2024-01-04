@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { flavors } from '@catppuccin/palette';
+	import { displayDate } from '$lib/utilities';
 	import projects from '$lib/projects';
 
 	import Header from '$components/Header.svelte';
@@ -7,16 +8,12 @@
 	import Container from '$components/Container.svelte';
 	import ProjectView from '$components/ProjectView.svelte';
 
-	const title = 'Projects';
-	let current = projects[0];
-
-	function displayDate({ year, month, day }) {
-		return `${year}-${month}-${day}`;
-	}
-
 	function selectProject(index: number) {
 		return () => (current = projects[index]);
 	}
+
+	let current = projects[0];
+	const title = 'Projects';
 </script>
 
 <Metadata {title} />
