@@ -12,6 +12,8 @@
 <Container name="banner">
 	<header>
 		<h1 style:color>{title}</h1>
+		<slot name="subtitle"/>
+		<slot name="content" />
 	</header>
 </Container>
 

@@ -3,27 +3,62 @@
 	import Header from '$components/Header.svelte';
 	import Metadata from '$components/Metadata.svelte';
 	import Container from '$components/Container.svelte';
+	import strings from '$lib/strings';
 
 	const title: string = 'Portfolio';
 </script>
 
 <Metadata {title} />
 <Header title={strings.portfolioTitle} color={flavors.macchiato.colors.blue.hex}>
+	<p slot="subtitle">{strings.portfolioSubtitle}</p>
+	<ul slot="content">
+		<li><i class="bi-envelope"></i> {strings.portfolioEmail}</li>
+		<li><i class="bi-globe"></i> turitoyuenan.pages.dev</li>
+		<li>
+			<i class="bi-linkedin"></i>
+			<a target="_blank" href="https://linkedin.com/in/trietntm-cs">
+				linkedin.com/in/trietntm-cs
+			</a>
+		</li>
+		<li>
+			<i class="bi-github"></i>
+			<a target="_blank" href="https://github.com/TuritoYuenan">
+				github.com/TuritoYuenan
+			</a>
+		</li>
+	</ul>
+</Header>
 
 <Container name="aboutme">
-	<h2>(Under Construction)</h2>
+	<h2>About Me</h2>
 </Container>
 
 <Container name="connect">
-	<h2>(Under Construction)</h2>
+	<h2>Skills</h2>
 </Container>
 
 <Container name="projects">
-	<h2>(Under Construction)</h2>
+	<h2>Education</h2>
 </Container>
 
 <Container name="contents">
-	<h2>(Under Construction)</h2>
+	<h2>Projects</h2>
 </Container>
 
-<style></style>
+<style>
+	@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css');
+
+	p[slot='subtitle'] {
+		font-size: larger;
+	}
+
+	ul[slot='content'] {
+		padding-left: 0;
+		list-style: none;
+		column-count: 2;
+	}
+
+	i {
+		margin-right: 0.2rem;
+	}
+</style>
