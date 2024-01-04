@@ -1,4 +1,6 @@
-// Link shorthands
+// Utility functions
+
+import type { Project } from "./projects";
 
 /**
  * Artstation artwork/artist
@@ -24,3 +26,12 @@ export const wikiCommon = (path: string) =>
  */
 export const webArchive = (timestamp: string, url: string) =>
 	`https://web.archive.org/web/${timestamp.toString()}/${url}`;
+
+/**
+ * Display a date in YYYY-MM-DD format
+ * @param date date
+ * @returns date in YMD format
+ */
+export function displayDate(date: Project["date"]) {
+	return `${date.year}-${date.month}-${date.day}`;
+}
