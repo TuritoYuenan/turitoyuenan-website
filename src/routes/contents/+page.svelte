@@ -8,7 +8,7 @@
 </script>
 
 <Metadata {title} />
-<Header {title} color={flavors.frappe.colors.peach.hex} />
+<Header {title} color={flavors.macchiato.colors.peach.hex} />
 
 <Container name="projects">
 	<h2>(Under Construction)</h2>

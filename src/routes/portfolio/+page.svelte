@@ -8,7 +8,7 @@
 </script>
 
 <Metadata {title} />
-<Header title="Nguyen Ta Minh Triet" color={flavors.frappe.colors.blue.hex} />
+<Header title={strings.portfolioTitle} color={flavors.macchiato.colors.blue.hex}>
 
 <Container name="aboutme">
 	<h2>(Under Construction)</h2>

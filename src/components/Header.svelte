@@ -22,6 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 
 		@media (max-width: 750px) {
 			text-align: center;

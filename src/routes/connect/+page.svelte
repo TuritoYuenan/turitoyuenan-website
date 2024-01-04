@@ -15,7 +15,7 @@
 </script>
 
 <Metadata {title} />
-<Header {title} color={flavors.frappe.colors.green.hex} />
+<Header {title} color={flavors.macchiato.colors.green.hex} />
 <Container name="projects">
 	<h2>Work</h2>
 	<section>
