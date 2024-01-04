@@ -21,11 +21,7 @@
 
 <Metadata {title} />
 
-<Header {title} color={flavors.frappe.colors.red.hex} />
-
-<Container name="aboutme">
-	<ProjectView {current} />
-</Container>
+<Header {title} color={flavors.macchiato.colors.red.hex} />
 
 <Container name="connect">
 	<div class="project-list">
@@ -36,6 +32,10 @@
 			</button>
 		{/each}
 	</div>
+</Container>
+
+<Container name="aboutme">
+	<ProjectView {current} />
 </Container>
 
 <Container name="projects">
@@ -55,6 +55,7 @@
 	}
 
 	button {
+		width: 100%;
 		padding: 0;
 		display: block;
 
