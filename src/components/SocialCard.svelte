@@ -27,18 +27,21 @@ To be used in the Connect page to showcase Social accounts -->
 <style>
 	a {
 		padding: 0 1rem;
+		border-radius: 0.5rem;
 		background: var(--ctp-macchiato-base);
 		transition: var(--default-transition);
-		border-radius: 0.5rem;
 		color: inherit;
 
+		gap: 1rem;
 		display: flex;
 		align-items: center;
-		gap: 1rem;
 
 		&:hover {
-			background: var(--ctp-macchiato-surface0);
-			text-decoration: none;
+			scale: 1.1;
+		}
+
+		&:active {
+			scale: 1;
 		}
 	}
 

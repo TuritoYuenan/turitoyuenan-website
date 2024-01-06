@@ -20,10 +20,12 @@
 
 <style>
 	main {
+		max-width: 60rem;
+		margin: auto;
 		padding: 1rem;
-		display: grid;
 		gap: 1rem;
 
+		display: grid;
 		grid-template-columns: 1fr 1.5fr 1fr;
 		grid-template-areas:
 			'wordmark navbar navbar'

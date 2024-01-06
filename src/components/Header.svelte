@@ -19,7 +19,7 @@
 
 <style>
 	header {
-		min-height: 10vh;
+		min-height: 20vh;
 
 		display: flex;
 		flex-direction: column;

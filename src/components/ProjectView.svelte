@@ -83,7 +83,7 @@
 	}
 
 	span.tag {
-		padding: 0.2rem;
+		padding: 0.2rem 0.4rem;
 		border-radius: 0.4rem;
 		color: var(--ctp-macchiato-crust);
 		background: var(--ctp-macchiato-text);

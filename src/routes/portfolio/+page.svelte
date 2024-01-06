@@ -8,11 +8,14 @@
 	const title: string = 'Portfolio';
 </script>
 
-<Metadata {title} />
-<Header title={strings.portfolioTitle} color={flavors.macchiato.colors.blue.hex}>
-	<p slot="subtitle">{strings.portfolioSubtitle}</p>
+<Metadata {title}>
+	<link rel="preconnect" href="https://cdn.jsdelivr.net">
+</Metadata>
+
+<Header title={strings.portfolio.title} color={flavors.macchiato.colors.blue.hex}>
+	<p slot="subtitle">{strings.portfolio.subtitle}</p>
 	<ul slot="content">
-		<li><i class="bi-envelope"></i> {strings.portfolioEmail}</li>
+		<li><i class="bi-envelope"></i> {strings.portfolio.email}</li>
 		<li><i class="bi-globe"></i> turitoyuenan.pages.dev</li>
 		<li>
 			<i class="bi-linkedin"></i>
@@ -54,8 +57,12 @@
 
 	ul[slot='content'] {
 		padding-left: 0;
-		list-style: none;
 		column-count: 2;
+		list-style: none;
+
+		@media (max-width: 800px) {
+			column-count: 1;
+		}
 	}
 
 	i {
