@@ -11,30 +11,12 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^3.0.1",
-		"@sveltejs/kit": "^2.0.6",
+		"@sveltejs/kit": "^2.3.0",
 		"svelte": "^4.2.8",
-		"vite": "^5.0.10"
+		"vite": "^5.0.11"
 	},
 	"dependencies": {
-		"@catppuccin/palette": "^1.0.1"
-	},
-	"prettier": {
-		"useTabs": true,
-		"tabWidth": 4,
-		"singleQuote": true,
-		"bracketSameLine": true,
-		"trailingComma": "none",
-		"quoteProps": "preserve",
-		"plugins": [
-			"prettier-plugin-svelte"
-		],
-		"overrides": [
-			{
-				"files": "*.svelte",
-				"options": {
-					"parser": "svelte"
-				}
-			}
-		]
+		"@catppuccin/palette": "^1.0.3",
+		"cassandra-driver": "^4.7.2"
 	}
 }
