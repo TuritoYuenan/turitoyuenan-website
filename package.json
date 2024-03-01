@@ -17,6 +17,6 @@
 	},
 	"dependencies": {
 		"@catppuccin/palette": "^1.0.3",
-		"cassandra-driver": "^4.7.2"
+		"@xata.io/client": "^0.29.2"
 	}
 }
