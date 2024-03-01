@@ -1,22 +1,22 @@
 // Utility functions
 
-import type { Project } from "./projects";
-
 /**
  * Artstation artwork/artist
  * @param path Path
  * @returns An Artstation link
  */
-export const artStation = (path: string) =>
-	`https://artstation.com/${path}`;
+export function artStation(path: string) {
+	return `https://artstation.com/${path}`;
+}
 
 /**
  * Wikipedia Commons asset
  * @param path Path to the asset
  * @returns A Wikimedia Commons link to the asset
  */
-export const wikiCommon = (path: string) =>
-	`https://commons.wikimedia.org/wiki/${path}`;
+export function wikiCommon(path: string) {
+	return `https://commons.wikimedia.org/wiki/${path}`;
+}
 
 /**
  * Internet Archive asset
@@ -24,14 +24,15 @@ export const wikiCommon = (path: string) =>
  * @param url The archived URL
  * @returns The Internet Archive entry
  */
-export const webArchive = (timestamp: string, url: string) =>
-	`https://web.archive.org/web/${timestamp.toString()}/${url}`;
+export function webArchive(timestamp: string | number, url: string): string {
+	return `https://web.archive.org/web/${timestamp.toString()}/${url}`;
+}
 
 /**
- * Display a date in YYYY-MM-DD format
- * @param date date
- * @returns date in YMD format
+ * Convert date object to string
+ * @param date Date object
+ * @returns Date in "DD MMM YYYY" format
  */
-export function displayDate(date: Project["date"]) {
-	return `${date.year}-${date.month}-${date.day}`;
+export function displayDateObj(date: Date): string {
+	return new Intl.DateTimeFormat("en-AU", { dateStyle: "medium" }).format(date);
 }

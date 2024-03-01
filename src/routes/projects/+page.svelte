@@ -1,19 +1,19 @@
 <script lang="ts">
 	import { flavors } from '@catppuccin/palette';
-	import { displayDate } from '$lib/utilities';
-	import projects from '$lib/projects';
+	import { displayDateObj } from '$lib/utilities';
 
 	import Header from '$components/Header.svelte';
 	import Metadata from '$components/Metadata.svelte';
 	import Container from '$components/Container.svelte';
 	import ProjectView from '$components/ProjectView.svelte';
 
-	function selectProject(index: number) {
-		return () => (current = projects[index]);
-	}
+	export let data;
+	const title = 'Project Database';
+	let current = data.projects[0];
 
-	let current = projects[0];
-	const title = 'Projects';
+	function selectProject(index: number) {
+		return () => (current = data.projects[index]);
+	}
 </script>
 
 <Metadata {title} />
@@ -22,10 +22,10 @@
 
 <Container name="connect">
 	<div class="project-list">
-		{#each projects as project, i}
+		{#each data.projects as project, i}
 			<button on:click={selectProject(i)}>
 				<h3>{project.name}</h3>
-				<p>{displayDate(project.date)}</p>
+				<p>{displayDateObj(project.starting_date)}</p>
 			</button>
 		{/each}
 	</div>
@@ -35,18 +35,21 @@
 	<ProjectView {current} />
 </Container>
 
-<Container name="projects">
+<Container name="contents">
 	<h3>Gallery</h3>
 	<p>(Under Construction)</p>
 </Container>
 
-<Container name="contents">
+<Container name="projects">
 	<h3>Links</h3>
-	<p>(Under Construction)</p>
+	<ul>
+		<li>Repository: <a href={current.repository} target="_blank">{current.repository}</a></li>
+	</ul>
 </Container>
 
 <style>
 	div.project-list {
+		max-height: 70vh;
 		overflow-x: hidden;
 		overflow-y: scroll;
 	}

@@ -1,19 +1,8 @@
 <script lang="ts">
-	import { flavors } from '@catppuccin/palette';
-	import { type Project } from '$lib/projects';
-	import { displayDate } from '$lib/utilities';
+	import type { ProjectsRecord } from "$lib/xata";
+	import { displayDateObj } from "$lib/utilities";
 
-	export let current: Project;
-
-	const colors = flavors.macchiato.colors;
-	const projectStatus = [
-		{ name: 'Idea', color: colors.yellow.hex },
-		{ name: 'Working', color: colors.blue.hex },
-		{ name: 'Completed', color: colors.green.hex },
-		{ name: 'Cancelled', color: colors.red.hex }
-	];
-
-	$: currentStatus = projectStatus[current.status];
+	export let current: ProjectsRecord;
 </script>
 
 <div class="project-view">
@@ -22,13 +11,13 @@
 	</div>
 
 	<div style:grid-area="date">
-		<h3>Starting day</h3>
-		<p>{displayDate(current.date)}</p>
+		<h3>Starting date</h3>
+		<p>{displayDateObj(current.starting_date)}</p>
 	</div>
 
 	<div style:grid-area="status">
 		<h3>Status</h3>
-		<p style:color={currentStatus.color}>{currentStatus.name}</p>
+		<p>{current.completed ? "Complete" : "Incomplete"}</p>
 	</div>
 
 	<div style:grid-area="category">
@@ -38,24 +27,28 @@
 
 	<div style:grid-area="desc">
 		<h3>Description</h3>
-		<p class="description">{current.description}</p>
+		<p class="description">{current.brief}</p>
 	</div>
 
 	<div style:grid-area="tags">
 		<h3>Tags</h3>
 		<p class="tags">
-			{#each current.tags as tag}
-				<span class="tag">{tag}</span>
-			{/each}
+			{#if current.tags}
+				{#each current.tags as tag}
+					<span class="tag">{tag}</span>
+				{/each}
+			{/if}
 		</p>
 	</div>
 
 	<div style:grid-area="tools">
 		<h3>Tools</h3>
 		<p class="tags">
-			{#each current.tools as tool}
-				<span class="tag">{tool}</span>
-			{/each}
+			{#if current.tools}
+				{#each current.tools as tool}
+					<span class="tag">{tool}</span>
+				{/each}
+			{/if}
 		</p>
 	</div>
 </div>
@@ -65,11 +58,11 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-areas:
-			'title title title'
-			'date status category'
-			'desc desc desc'
-			'tools tools tools'
-			'tags tags tags';
+			"title title title"
+			"date status category"
+			"desc desc desc"
+			"tools tools tools"
+			"tags tags tags";
 	}
 
 	p.tags {
@@ -79,7 +72,7 @@
 	}
 
 	p.description {
-		min-height: 2.5em;
+		min-height: 3ch;
 	}
 
 	span.tag {
