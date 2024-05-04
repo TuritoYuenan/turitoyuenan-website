@@ -3,6 +3,7 @@
 <script lang="ts">
 	/** Current page's title */
 	export let title: string;
+
 	/** Current page's description or purpose */
 	export let desc: string = "Turito Yuenan's website";
 </script>

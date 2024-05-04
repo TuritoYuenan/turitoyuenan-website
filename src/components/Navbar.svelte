@@ -25,7 +25,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-	
+
 		overflow: hidden;
 	}
 
@@ -43,11 +43,4 @@
 			border-bottom-color: currentColor;
 		}
 	}
-
-	/* @media (max-width: 700px) {
-		nav {
-			flex-direction: column;
-			gap: 0.5rem;
-		}
-	} */
 </style>
