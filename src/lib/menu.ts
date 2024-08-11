@@ -32,7 +32,7 @@ const entries: MenuEntry[] = [
 	},
 	{
 		name: 'Portfolio',
-		href: '/portfolio',
+		href: 'https://turitoyuenan.github.io/TuritoYuenan',
 		color: colors.blue.hex,
 		desc: `Possible recruiters can check out my Portfolio
 		to walk through my academic skills, education, and projects`
